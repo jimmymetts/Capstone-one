@@ -1,0 +1,35 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "email": "jimmy@email.com",
+            "password": "test"
+        }
+    ],
+    "posterTemplates": [
+        {
+            "id": "",
+            "posterName": "One"
+        },
+        {
+            "id": "",
+            "posterName": "Two"
+        },
+        {
+            "id": "",
+            "posterName": "Three"
+        },
+        {
+            "id": "",
+            "posterName": "Four"
+        }
+    ],
+    "posterData": [
+        {
+            "id": "",
+            "artistName": "",
+            "showDate": "",
+            "venue": ""
+        }
+    ]
+}
