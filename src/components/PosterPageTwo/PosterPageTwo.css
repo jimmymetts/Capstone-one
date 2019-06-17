@@ -1,0 +1,228 @@
+
+/* outer border divs */
+
+
+.TemplateTwoOutterBorder {
+    box-shadow: rgb(108, 108, 106);
+    border-style: double;
+    border-width: 15px;
+    border-radius: 40px;
+    margin: 0px;
+    padding: 3em;
+    background-color: black;
+    /* font-family: 'Mrs Sheppards', cursive; */
+    font-size: x-large;
+}
+
+
+
+
+/* inner divs - container around input form - where DOM & keeps div from resizing */
+
+.TemplateOneContent {
+    padding: opx;
+    height: 500px;
+    width: 400px;
+    border-radius: 40px;
+    border-style: double;
+    border-width: 15px;
+    background: black;
+    
+}
+
+
+
+/* below -  outside div & border of each poster on template page */
+
+
+
+.TemplatesCardTwo {                    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 2em;
+    
+}
+
+
+
+
+
+
+
+
+/* below -  outside div & border of each poster on template page */
+
+/* .TemplatesCardThree {                    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 2em;
+} */
+
+/* below -  outside div & border of each poster on template page */
+
+/* .TemplatesCardFour {                    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 2em;
+} */
+
+
+
+
+
+/* .icon--template {
+    margin-top: -425px;
+    z-index: 1;
+} */
+
+/* below starts text lines for individual templates "IMAGES"" css aligment */
+
+/* .containerLineOne {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centeredFirstLine {
+    position: absolute;
+  top: -300px;
+  right: 190px;
+  }
+
+  .containerLineTwo {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centeredSecondLine {
+    position: absolute;
+    bottom: 612px;
+    left: 115px;
+  }
+
+  .containerLineThree {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centeredThirdLine {
+    position: absolute;
+    bottom: 450px;
+    left: 62px;
+  } */
+
+
+
+
+
+
+
+
+/* font-family: 'Shrikhand', cursive; */
+
+
+/* postion of card - slight change - pushes down in page & off white shading */
+/* .EventsBorderCard {                         
+    box-shadow: rgb(108, 108, 106);
+    border-radius: 15px;
+    padding: 2em;
+    background-color: rgb(254, 255, 242);
+} */
+
+
+
+
+
+
+
+/* below -  outside div & border of each poster on template page */
+
+/* .TemplatesCardOne {                    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+.TemplatesCardTwo {                    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+.TemplatesCardThree {                    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+.TemplatesCardFour {                    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 2em;
+} */
+
+/* .EventsButton {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+} */
+
+/* postion of card - slight change */
+/* .EventsBorderCard {                         
+    box-shadow: rgb(108, 108, 106);
+    border-radius: 15px;
+    padding: 2em;
+    background-color: rgb(254, 255, 242);
+} */
+
+/* effects input page one */
+/* .EventsForm {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: rgb(108, 108, 106);
+    border-radius: 0px;
+    padding: 5em;
+    background-color: #E13D09;
+} */
+/* .EventsIcon {
+    width: 80px;
+    height: 80px;
+    opacity: 0.7;
+    padding: 4px;
+    margin: 1em 2em;
+} */
+
+/* .TemplatesCardTwo {
+    box-shadow: rgb(108, 108, 106);
+    border-style: double;
+    border-width: 15px;
+    border-radius: 40px;
+    margin: 0px;
+    padding: 3em;
+    background-color:black;
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    font-size: x-large;
+} */
+
+/* inner div where text renders */
+
+/* .ContentCardTwo {         
+    padding: 0px;
+    height: 500px;
+    width: 400px;
+    border-radius: 40px;
+    border-style: double;
+    border-width: 15px;
+    background: #000;
+    color: #fff;
+} */
