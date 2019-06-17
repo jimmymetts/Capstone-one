@@ -1,0 +1,48 @@
+
+/* outer border divs */
+
+.TemplateOneOutterBorder {
+    box-shadow: rgb(108, 108, 106);
+    border-style: double;
+    border-width: 15px;
+    border-radius: 40px;
+    margin: 0px;
+    padding: 3em;
+    font-family: 'Jacques Francois Shadow', cursive;
+    background-color:black; 
+    color:white;
+    font-size: x-large;
+}
+
+
+
+/* inner divs - container around input form - where DOM & keeps div from resizing */
+
+/* .TemplateOneContent {
+    padding: 0px;
+    height: 500px;
+    width: 400px;
+    border-radius: 40px;
+    border-style: double;
+    border-width: 15px;
+    background: black;
+    
+} */
+
+
+
+
+
+
+/* centers button in page */
+.EventsButton {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+
+.icon--template {
+    margin-top: -425px;
+    z-index: 1;
+}

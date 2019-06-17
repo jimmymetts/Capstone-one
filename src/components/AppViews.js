@@ -1,19 +1,28 @@
 import React, { Component } from "react"
 import { Route, Redirect } from 'react-router-dom'
+import Login from "./login/LoginForm"
 import PosterPageOne from "./PosterPageOne/PosterPageOne";
 import PosterPageTwo from "./PosterPageTwo/PosterPageTwo";
-import PosterPageThree from "./PosterPageThree/PosterPageThree";
+
 // import ReactPdf from "./reactPdf/ReactPdf"
 import Kennel from "../nav/NavBar";
+import DbCalls from "../modules/DbCalls"
+import PosterTemplateOne from "./PosterTemplateOne/PosterTemplateOne"
+import PosterTemplateTwo from "./PosterTemplateTwo/PosterTemplateTwo"
+import PosterTemplateThree from "./PosterTemplateThree/PosterTemplateThree";
+import PosterTemplateFour from "./PosterTemplateFour/PosterTemplateFour";
 
 
 export default class AppViews extends Component {
 
     state = {
+       login: [],
+       users: [],
        artistName:[],
        showDate:[],
        venue:[],
-       posterTemplates: []
+       posterTemplates: [],
+       posterData: []
     };
 
     handleFieldChange = evt => {
@@ -25,16 +34,40 @@ export default class AppViews extends Component {
       componentDidMount() {
         const newState = {}
 
-        fetch("http://localhost:5002/posterTemplates")
-            .then(r => r.json())
+       DbCalls.getAllPosters()
+            .then(posterData => newState.posterData = posterData)        
+            .then(() => DbCalls.getAllPostersTemplates())
             .then(posterTemplates => newState.posterTemplates = posterTemplates)
+            .then(() => DbCalls.getAllUsers())         
+            .then(users => newState.users = users)
+           .then(() => this.setState(newState))
+
     }
 
+    addPoster = (event) =>
+    DbCalls.postNewPoster(event)
+        .then(() => DbCalls.getAllPosters())
+        .then(posterData =>
+            this.setState({
+                posterData: posterData
+            })
+        );
+
     render() {
+        console.log("State", this.state)
         return (
             <React.Fragment >
 
-                <Route exact path="/login" 
+
+<Route exact path="/login" 
+                    render={(props) => {
+                            return <Login 
+                            { ...props }                              
+                            users={this.state.users} />
+                   }
+                    } />
+
+                <Route exact path="/PosterPageONe" 
                     render={(props) => {
                             return <PosterPageOne
                             {...props}
@@ -42,6 +75,7 @@ export default class AppViews extends Component {
                             showDate={this.state.showDate}
                             venue={this.state.venue}
                             handleFieldChange = {this.handleFieldChange}
+                            addPoster={this.addPoster}
                             />
                     }
                     } />
@@ -53,14 +87,40 @@ export default class AppViews extends Component {
                             artistName={this.state.artistName}
                             showDate={this.state.showDate}
                             venue={this.state.venue}
+                            posterData={this.state.posterData}
                             handleFieldChange = {this.handleFieldChange}
+                            addPoster={this.addPoster}
                             />
                     }
                     } />
 
-                 <Route exact path="/posterPageThree" 
+                <Route exact path="/posterTemplateOne" 
+                                render={(props) => {
+                                        return <PosterTemplateOne
+                                        {...props}
+                                        artistName={this.state.artistName}
+                                        showDate={this.state.showDate}
+                                        venue={this.state.venue}
+                                        handleFieldChange = {this.handleFieldChange}
+                                        />
+                                }
+                                } />
+
+                <Route exact path="/posterTemplateTwo" 
+                                render={(props) => {
+                                        return <PosterTemplateTwo
+                                        {...props}
+                                        artistName={this.state.artistName}
+                                        showDate={this.state.showDate}
+                                        venue={this.state.venue}
+                                        handleFieldChange = {this.handleFieldChange}
+                                        />
+                                }
+                                } />
+
+                 <Route exact path="/posterTemplateThree" 
                     render={(props) => {
-                            return <PosterPageThree
+                            return <PosterTemplateThree
                             {...props}
                             artistName={this.state.artistName}
                             showDate={this.state.showDate}
@@ -70,13 +130,31 @@ export default class AppViews extends Component {
                     }
                     } />
 
+                <Route exact path="/posterTemplateFour" 
+                                render={(props) => {
+                                        return <PosterTemplateFour
+                                        {...props}
+                                        artistName={this.state.artistName}
+                                        showDate={this.state.showDate}
+                                        venue={this.state.venue}
+                                        handleFieldChange = {this.handleFieldChange}
+                                        />
+                                }
+                                } />
 
-                            />
+
+                           
                                         </React.Fragment>
             )
         }
     }
 
 
-    // .then(() => fetch("http://localhost:5002/employees")
-    // .then(r => r.json()))
+//     fetch("http://localhost:5002/posterData")
+//     .then(r => r.json())
+//     .then(posterTemplates => newState.posterTemplates = posterTemplates)
+//     .then(() => this.setState(newState))
+
+//     DbCalls.getAllUsers()
+//     .then(users => newState.users = users)
+// }

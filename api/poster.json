@@ -1,35 +1,378 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "email": "jimmy@email.com",
-            "password": "test"
-        }
-    ],
-    "posterTemplates": [
-        {
-            "id": "",
-            "posterName": "One"
-        },
-        {
-            "id": "",
-            "posterName": "Two"
-        },
-        {
-            "id": "",
-            "posterName": "Three"
-        },
-        {
-            "id": "",
-            "posterName": "Four"
-        }
-    ],
-    "posterData": [
-        {
-            "id": "",
-            "artistName": "",
-            "showDate": "",
-            "venue": ""
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Jimmy",
+      "email": "jimmy@email.com",
+      "password": "test"
+    },
+    {
+      "id": 2,
+      "name": "dek",
+      "email": "dek@email.com",
+      "password": "test"
+    }
+  ],
+  "posterTemplates": [
+    {
+      "id": 1,
+      "posterName": "One"
+    },
+    {
+      "id": 2,
+      "posterName": "Two"
+    },
+    {
+      "id": 3,
+      "posterName": "Three"
+    },
+    {
+      "id": 4,
+      "posterName": "Four"
+    }
+  ],
+  "posterData": [
+    {
+      "id": "",
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "posterTemplatesId": 1
+    },
+    {
+      "showDate": "",
+      "venue": "",
+      "id": "6-nSWuj"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "7WQvZtH"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "h47mPk2"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "Lq3mpA4"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "bwGKRDD"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "VerYLlS"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "YXh8ESb"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "kogRzZd"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "Ci1miz6"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "m_5045K"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "tHBcuY6"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "2QNXTPA"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "V8ZRuKa"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "OQT24CN"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "3Uw5QsZ"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "3JPR9p0"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "kBjhpEs"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "fkM2rmj"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "tHwDxwW"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "n-0rk6p"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "5gSgsft"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "v4TI9q1"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "rcJfS12"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "VINQGzJ"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "gpc4tWj"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "Og2jfVw"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "t5uo5Me"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "shayO28"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "dkz6rys"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "l1rkN07"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "Ry3t8Je"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "GDZMiuj"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "H763dNE"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "yHy_zNs"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "KePl8TZ"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "6iX0RoG"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "cJFRXuP"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "t6ItlHK"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "V-6_UVD"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "2VB-Nu0"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "3JbG1KH"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "NoelKS7"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "NLnMHOX"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "-gmD2VP"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "e7fBBU1"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "FKIMddm"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "oYTo7jT"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "6mOeRtU"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "qSBh9Ro"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "b46cA5p"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "DhA9SRY"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "QgskNhg"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "lQOTBVY"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "JEyWQtj"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "bajMd8b"
+    },
+    {
+      "artistName": "",
+      "showDate": "",
+      "venue": "",
+      "id": "jc9ckPJ"
+    }
+  ]
 }

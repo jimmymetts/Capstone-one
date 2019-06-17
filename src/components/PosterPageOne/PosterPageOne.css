@@ -1,51 +1,16 @@
+
+/* container around input form */
+
 .PageOneCard {
     box-shadow: rgb(108, 108, 106);
-    border-radius: 50px;
+    border-style: double;
+    border-width: 15px;
+    border-radius: 40px;
     margin: 0px;
-    padding: 13em;
-    background-color:#E13D09;
+    padding: 3em;
+    background-color:black;
     font-family: 'Shrikhand', cursive;
     color: #E8B010;
-    font-size: x-large;
-}
-
-.posterPageTwo {
-    box-shadow: rgb(108, 108, 106);
-    border-radius: 15px;
-    margin: 0px;
-    padding: 13em;
-    background-color:#E13D09;
-    font-family: 'Shrikhand', cursive;
-    color: white;
-    font-size: x-large;
-    display: flex;
-    align-content: space-around;
-    flex-direction: column;
-    justify-content: center;
-    
-
-}
-
-.content {
-    height: 400px;
-    background: #000;
-    color: #fff;
-}
-.button {
-    transform: translateY(-100%);
-    display: inline-block;
-}
-
-.EventsForm {
-    display: flex;
-    justify-content: space-evenly;
-    box-shadow: rgb(108, 108, 106);
-    border-radius: 0px;
-    padding: 2em;
-    background-color: #E8B010;
-}
-.artistName {
-    color:black;
     font-size: x-large;
 }
 
@@ -53,43 +18,27 @@
     color: #E8B010
 }
 
-/* .PosterCard {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: right;
-    flex: 1;
-    padding: 3em 9em;
-    margin: 5px;
-} 
-
-.NewsButton {
-    display: flex;
-    justify-content: center;
-    padding-top: 2em;
-} *
-
- .PosterForm {
+/* effects input page one */
+.EventsForm {
     display: flex;
     justify-content: space-evenly;
-    box-shadow: rgb(221, 221, 210);
-    border-radius: 15px;
-    padding: 2em;
-    background-color: rgb(46, 166, 170);
+    box-shadow: rgb(108, 108, 106);
+    border-radius: 0px;
+    padding: 5em;
+    background-color: #E13D09;
 }
 
-.NewsIcon {
-    width: 70px;
-    height: 70px;
-    opacity: 0.7;
-    padding: 4px;
-    margin: 2em 2em;
-}
 
-.EditNewsBtn {
-    float: right;
-}
 
-.DeleteNewsBtn {
-    float: right;
-} */
+
+
+
+
+
+
+
+
+
+
+
 
