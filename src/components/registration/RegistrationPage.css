@@ -1,33 +1,28 @@
 /* container around input form */
 
- .PageOneCard{
+/* .PageOneCard {
     box-shadow: rgb(108, 108, 106);
     border-style: double;
     border-width: 15px;
     border-radius: 40px;
     margin: 0px;
     padding: 3em;
-    background-color:#E13D09;
+    background-color:black;
     font-family: 'Shrikhand', cursive;
     color: #E8B010;
     font-size: x-large;
-}
-
-/* .textColor {
-    color: #E8B010
 } */
 
+.textColor {
+    color: #E8B010
+}
+
 /* effects input page one */
-.LoginForm {
+/* .EventsForm {
     display: flex;
     justify-content: space-evenly;
     box-shadow: rgb(108, 108, 106);
     border-radius: 0px;
     padding: 5em;
     background-color: #E13D09;
-} 
-
-
-
-
-
+} */

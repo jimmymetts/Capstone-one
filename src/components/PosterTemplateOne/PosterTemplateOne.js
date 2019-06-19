@@ -1,14 +1,31 @@
 import React, { Component } from "react"
 import "./PosterTemplateOne.css"
 
-
+let myUser = sessionStorage.getItem(
+    "credentials",
+  )
 
 export default class PosterTemplateOne extends Component {
+
+    constructNewPoster = () => { 
+          const poster = {
+            artistName: this.props.artistName,
+            showDate: this.props.showDate,
+            venue: this.props.venue,
+            templateId: "1",
+            userId: myUser
+          };
+        
+    console.log("Poster", poster)
+        this.props.addPoster(poster)
+        .then(() => this.props.history.push("/myPosters"));
+    }
+
     render() {
         return (
             <React.Fragment>
 
-                <section className="TemplatesCardOne">
+                <section className="TemplatesCardOne" id="1">
                     <div className="EventsBorderCard">
 
                         <div className="TemplateOneOutterBorder" >
@@ -34,15 +51,15 @@ export default class PosterTemplateOne extends Component {
                             </div>
 
                         </div>
-                        <button className="btn btn-warning DeleteNewsBtn"
-                            onClick={() => { this.props.history.push("/posterTemplateOne") }}>Download PDF</button>
-                            <button className="btn btn-dark DeleteNewsBtn"
-                            onClick={() => { this.props.history.push("/posterTemplateOne") }}>Edit</button>
-                                                    <button className="btn btn-danger DeleteNewsBtn"
-                            onClick={() => { this.props.history.push("/posterTemplateOne") }}>Save</button>
+                        <button className="btn btn-warning"
+                            onClick={() => { this.props.history.push("/posterTemplateFour") }}>Download PDF</button>
+
+                        <button className="btn btn-success"
+                            onClick={() => { this.constructNewPoster() }}>Save</button>
+
+                        <button className="btn btn-dark"
+                            onClick={() => {this.props.history.push("/posterPageTwo") }}>Back</button>
                            
-                           <button className="btn btn-dark DeleteNewsBtn"
-                        onClick={() => {this.props.history.push("/posterPageTwo") }}>Back</button>
                         
                     </div>
 

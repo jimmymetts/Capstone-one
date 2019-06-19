@@ -17,6 +17,10 @@ class NavBar extends Component {
                             <Link className="nav-link text-dark" to="/sign in">Sign In</Link>
                         </li>
 
+                        <li className="nav-item">
+                            <Link className="nav-link text-dark" to="/login">Log Out</Link>
+                        </li>
+
 
                     </ul>
                 </nav>
