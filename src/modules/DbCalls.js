@@ -23,7 +23,9 @@ export default {
     return fetch(`${remoteURL}/posterData/${id}`).then(e => e.json())
   },
   getAllPosters() {
-    return fetch(`${remoteURL}/posterData`).then(e => e.json())
+    let myUser = sessionStorage.getItem("credentials")
+    let myUserNumber = Number(myUser)
+    return fetch(`${remoteURL}/posterData?userId=${myUserNumber}`).then(e => e.json())
   },
   getAllPostersTemplates() {
     return fetch(`${remoteURL}/posterData`).then(e => e.json())
@@ -35,6 +37,16 @@ export default {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(newPoster)
+    }).then(e => e.json())
+  },
+
+  /* added delete function */
+  deletePoster(id) {
+    return fetch(`${remoteURL}/Poster/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
     }).then(e => e.json())
   },
 }

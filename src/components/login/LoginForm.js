@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+// import "../login/Login.css"
 
 
 export default class Login extends Component {
@@ -22,13 +23,12 @@ export default class Login extends Component {
         let inputPassword = this.state.password
         let matchUser = allUsers.find(user => user.email === inputEmail && user.password === inputPassword)
         console.log(this.state.email)
-        // console.log("matchUsers", matchUser.id)
         evt.preventDefault();
         if (this.state.email | this.state.password === ""){
             window.alert("Must enter email & password to login");
         }
         else if(!matchUser){
-            window.alert("User not found");
+            window.alert("User not found, please register");
           } else {
         sessionStorage.setItem(
             "credentials",
@@ -36,52 +36,70 @@ export default class Login extends Component {
             )
             this.props.history.push("/PosterPageOne");
             window.alert(`Welcome back ${matchUser.name}!`)
+
+            let myUser = sessionStorage.getItem(
+                "credentials",
+                matchUser.id, 
+            )
+            
+            console.log(myUser)
         }
     }
 
 
     render() {
-        console.log("Users", this.props.users)
+        // console.log("Users", this.props.users)
         return (
             <React.Fragment>
+
+<div className="EventsForm">
+        <div className="PageOneCard" >
             <div className="RegisterWelcome">
+            
               <h1> Welcome to Show Poster NOW! </h1>
               <br></br>
-             
+              
               </div>
+              
             <form
             className="LoginForm">
                 <h1 className="">Login</h1>
                 <label htmlFor="inputEmail">
-                    Email address:
-                </label>
+                    Email address:</label>
+                
                 <input onChange={this.handleFieldChange} type="email"
                        id="email"
                        placeholder=""
                        required="" autoFocus="" />
                        <br></br>
                 <label htmlFor="inputPassword">
-                    Password:
-                </label>
+                    Password:</label>
+                
                 <input onChange={this.handleFieldChange} type="password"
                        id="password"
                        placeholder=""
                        required="" />
                        <br></br>
                 <button type="submit"
-                className="btn btn-primary LoginSubmit"
-                onClick={this.handleLogin}>
-                    Login
-                </button>
+                className="btn btn-primary LoginSubmit" onClick={this.handleLogin}>Login</button>
+                
                 <br></br>
                 <p> Don't have an account? </p>
-                <button
-                className="btn btn-primary"
-                onClick={() => this.props.history.push("/PosterPageOne")}>
+                <button className="btn btn-primary" onClick={() => this.props.history.push("/registration")}>
                     Register
                 </button>
             </form>
+
+            </div>
+            </div>
             </React.Fragment>
         )
     }
 }
+
+
+   // componentDidMount() {
+    //     if(sessionStorage.getItem("credentials") !== null){
+    //         sessionStorage.removeItem("credentials")
+    //     }
+    // }
