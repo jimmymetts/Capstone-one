@@ -32,7 +32,7 @@ export default class PosterPageTwo extends Component {
      </div>
 
         </div>
-             <button className="btn btn-dark DeleteNewsBtn"
+             <button className="btn btn-dark ChooseThisTemplateBtn"
                      onClick={() => {this.props.history.push("/posterTemplateOne") }}>Choose This Template
              </button>
         </div>
@@ -70,7 +70,7 @@ export default class PosterPageTwo extends Component {
           </div>
 
            </div>
-           <button className="btn btn-dark DeleteNewsBtn"
+           <button className="btn btn-dark ChooseThisTemplateBtn"
                            onClick={() => {this.props.history.push("/posterTemplateTwo") }}>Choose This Template</button>
            </div>
         </section>
@@ -102,7 +102,7 @@ export default class PosterPageTwo extends Component {
         </div>
 
            </div>
-           <button className="btn btn-dark DeleteNewsBtn"
+           <button className="btn btn-dark ChooseThisTemplateBtn"
             onClick={() => {this.props.history.push("/posterTemplateThree") }}>Choose This Template</button>
            </div>
            
@@ -134,7 +134,7 @@ export default class PosterPageTwo extends Component {
         </div>
 
            </div>
-                 <button className="btn btn-dark DeleteNewsBtn"
+                 <button className="btn btn-dark ChooseThisTemplateBtn"
                  onClick={() => {this.props.history.push("/posterTemplateFour") }}>Choose This Template</button>
            </div>
            

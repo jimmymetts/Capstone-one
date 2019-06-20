@@ -40,11 +40,14 @@ export default class MyPosters extends Component {
 
                 </div>
                     <button className="btn btn-dark"
-                            onClick={() => this.props.deletePoster(onePoster.id)}>Delete Poster
+                            onClick={() => this.props.deletePosters(onePoster.id)}>Delete Poster
                     </button>
                     <button className="btn btn-dark buttonSpacing"
-                            onClick={() => console.log("put edit function here") }>Edit Poster
+                            onClick={() => {
+                                this.props.history.push(`/posters/${onePoster.id}/edit`);}}>Edit Poster
                     </button>
+                    <button className="btn btn-warning buttonSpacing"
+                            onClick={() => { this.props.history.push("/posterTemplateOne") }}>Download PDF</button>
                 </div>
                 </section>
                 </div>
@@ -75,11 +78,14 @@ export default class MyPosters extends Component {
 
                 </div>
                     <button className="btn btn-dark"
-                            onClick={() => this.props.deleteonePoster(onePoster.id)}>Delete Poster
+                            onClick={() => this.props.deletePosters(onePoster.id)}>Delete Poster
                     </button>
                     <button className="btn btn-dark buttonSpacing"
-                            onClick={() => console.log("put edit function here") }>Edit Poster
+                            onClick={() => {
+                                this.props.history.push(`/news/${onePoster.id}/edit`);}}>Edit Poster
                     </button>
+                    <button className="btn btn-warning buttonSpacing"
+                            onClick={() => { this.props.history.push("/posterTemplateTwo") }}>Download PDF</button>
                 </div>
                 </section>
                 </div>
@@ -110,11 +116,14 @@ export default class MyPosters extends Component {
 
                 </div>
                     <button className="btn btn-dark"
-                            onClick={() => this.props.deleteonePoster(onePoster.id)}>Delete Poster
+                            onClick={() => this.props.deletePosters(onePoster.id)}>Delete Poster
                     </button>
                     <button className="btn btn-dark buttonSpacing"
-                            onClick={() => console.log("put edit function here") }>Edit Poster
+                            onClick={() => {
+                                this.props.history.push(`/news/${onePoster.id}/edit`);}}>Edit Poster
                     </button>
+                    <button className="btn btn-warning buttonSpacing"
+                            onClick={() => { this.props.history.push("/posterTemplateThree") }}>Download PDF</button>
                 </div>
                 </section>
                 </div>
@@ -145,11 +154,14 @@ export default class MyPosters extends Component {
 
                 </div>
                     <button className="btn btn-dark"
-                            onClick={() => this.props.deleteonePoster(onePoster.id)}>Delete Poster
+                            onClick={() => this.props.deletePosters(onePoster.id)}>Delete Poster
                     </button>
                     <button className="btn btn-dark buttonSpacing"
-                            onClick={() => console.log("put edit function here") }>Edit Poster
+                            onClick={() => {
+                                this.props.history.push(`/news/${onePoster.id}/edit`);}}>Edit Poster
                     </button>
+                    <button className="btn btn-warning buttonSpacing"
+                            onClick={() => { this.props.history.push("/posterTemplateFour") }}>Download PDF</button>
                 </div>
                 </section>
                 </div>

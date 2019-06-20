@@ -36,13 +36,15 @@ export default class AppViews extends Component {
       componentDidMount() {
         const newState = {}
 
-        DbCalls.getPoster()
+        DbCalls.getAllPosters()
             .then(posterData => newState.posterData = posterData)        
             .then(() => DbCalls.getAllPostersTemplates())
             .then(posterTemplates => newState.posterTemplates = posterTemplates)
             .then(() => DbCalls.getAllUsers())         
             .then(users => newState.users = users)
             .then(() => this.setState(newState))
+
+      
     }
 
     addPoster = (event) =>
@@ -63,19 +65,31 @@ export default class AppViews extends Component {
         );
       }    
       
-      deletePoster = (id) => {
+      deletePosters = (id) => {
         const newState = {};
         DbCalls.deletePoster(id)
-            .then(DbCalls.getAllPosters)
+            .then(DbCalls.getAllPosters())
             .then(posterData => { newState.Poster = posterData})
             .then(() => this.setState(newState))
+            .then(window.location.reload())
     };
+
+        editPosters = (editedPosters) => {
+            return DbCalls.putEvents(editedPosters)
+                .then(() => DbCalls.getAllPosters())
+                .then(posters => {
+                    this.setState({
+                        posters: posters
+                    })
+                });
+        };
 
 
 
     render() {
         // console.log("State", this.state)
-        // console.log("poster data", this.state.posterData)
+        console.log("poster data", this.state.posterData)
+        
         return (
             <React.Fragment >
 
@@ -136,7 +150,6 @@ export default class AppViews extends Component {
                                         venue={this.state.venue}
                                         handleFieldChange = {this.handleFieldChange}
                                         addPoster={this.addPoster}
-
                                         />
                                 }
                                 } />
@@ -193,10 +206,20 @@ export default class AppViews extends Component {
                                         venue={this.state.venue}
                                         handleFieldChange = {this.handleFieldChange}
                                         posterData={this.state.posterData}
-                                        deletePoster={this.deletePoster}
+                                        deletePosters={this.deletePosters}
+                                        editPosters={this.editPosters}
                                         />
                                 }
                                 } />
+                        {/* <Route path="/myPosters/:posterId(\d+)/edit"
+                            render={props => {
+                                return <MyPosters {
+                                    ...props
+                                }
+                                    events={this.state.events}
+                                    putPosters={this.putPosters} />
+                            }
+                            } /> */}
 
 
                            

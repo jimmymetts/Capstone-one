@@ -42,11 +42,22 @@ export default {
 
   /* added delete function */
   deletePoster(id) {
-    return fetch(`${remoteURL}/Poster/${id}`, {
+    return fetch(`${remoteURL}/posterData/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
       },
     }).then(e => e.json())
   },
+
+/* added edit function */
+putPosters(editedPosters) {
+  return fetch(`${remoteURL}/posters/${editedPosters.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(editedPosters)
+  }).then(e => e.json());
+}
 }
