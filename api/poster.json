@@ -42,212 +42,100 @@
       "id": 7
     },
     {
-      "artistName": "SMith 1",
-      "showDate": [],
-      "venue": [],
-      "templateId": "3",
-      "userId": "2",
-      "id": 8
-    },
-    {
-      "artistName": "Tom1",
-      "showDate": "Tom1",
-      "venue": "Tom1",
-      "templateId": "1",
-      "userId": null,
+      "artistName": "Stealers Wheel",
+      "showDate": "June 20,  1978",
+      "venue": "Exit Inn",
+      "templateId": "4",
+      "userId": "1",
       "id": 9
     },
     {
-      "artistName": "Smithj",
-      "showDate": "Smithj",
-      "venue": "Smithj",
+      "artistName": "Emmylou Harris",
+      "showDate": "June 21, 2019",
+      "venue": "The Ryman",
       "templateId": "1",
-      "userId": null,
+      "userId": "1",
       "id": 10
     },
     {
-      "artistName": "Smithj",
-      "showDate": "Smithj",
-      "venue": "Smithj",
-      "templateId": "3",
-      "userId": null,
+      "artistName": "Steely Dan",
+      "showDate": "July 31, 2019",
+      "venue": "BridgeStone",
+      "templateId": "1",
+      "userId": "1",
       "id": 11
     },
     {
-      "artistName": "Dave",
-      "showDate": "Dave",
-      "venue": "Smithj",
-      "templateId": "1",
-      "userId": null,
+      "artistName": "Tedeschi Trucks Band",
+      "showDate": "August 21, 2019",
+      "venue": "Asend",
+      "templateId": "3",
+      "userId": "1",
       "id": 12
     },
     {
-      "artistName": "RObert",
-      "showDate": "Dave",
-      "venue": "Smithj",
-      "templateId": "4",
-      "userId": null,
+      "artistName": "The Stray Birds",
+      "showDate": "June 22, 2019",
+      "venue": "The Basement East",
+      "templateId": "2",
+      "userId": "1",
       "id": 13
     },
     {
-      "artistName": "Robert",
-      "showDate": "Robert",
-      "venue": "Robert",
-      "templateId": "1",
-      "userId": null,
+      "artistName": "The Steel Drivers",
+      "showDate": "June 22, 2019",
+      "venue": "The Station Inn",
+      "templateId": "4",
+      "userId": "1",
       "id": 14
     },
     {
-      "artistName": "Thomas",
-      "showDate": "Thomas",
-      "venue": "Thomas",
+      "artistName": "The Band ",
+      "showDate": "November 25, 1976. ",
+      "venue": " Winterland Ballroom ",
       "templateId": "1",
-      "userId": null,
+      "userId": "1",
       "id": 15
     },
     {
-      "artistName": "Adam",
-      "showDate": "Adam",
-      "venue": "Adam",
+      "artistName": "The Band",
+      "showDate": "Now",
+      "venue": "Nss",
       "templateId": "1",
-      "userId": "2",
+      "userId": "1",
       "id": 16
     },
     {
-      "artistName": "Bart",
-      "showDate": "Bart",
-      "venue": "Bart",
-      "templateId": "1",
-      "userId": "2",
+      "artistName": "metts",
+      "showDate": "metts",
+      "venue": "metts",
+      "templateId": "4",
+      "userId": "1",
       "id": 17
     },
     {
-      "artistName": "Carl",
-      "showDate": "Carl",
-      "venue": "Carl",
-      "templateId": "1",
+      "artistName": "metts",
+      "showDate": "metts",
+      "venue": "metts",
+      "templateId": "3",
       "userId": "1",
       "id": 18
     },
     {
-      "artistName": "Dan",
-      "showDate": "Dan",
-      "venue": "Dan",
-      "templateId": "1",
+      "artistName": "metts",
+      "showDate": "metts",
+      "venue": "metts",
+      "templateId": "4",
       "userId": "1",
       "id": 19
     },
     {
-      "artistName": "Frank",
-      "showDate": "Frank",
-      "venue": "Frank",
-      "templateId": "1",
-      "userId": "2",
+      "artistName": "The Stray Birds",
+      "showDate": "June 15, 2017",
+      "venue": "The Basement",
+      "templateId": "2",
+      "userId": "1",
       "id": 20
-    },
-    {
-      "artistName": "RUby",
-      "showDate": "RUby",
-      "venue": "RUby",
-      "templateId": "3",
-      "userId": "2",
-      "id": 21
-    },
-    {
-      "artistName": "High Plains",
-      "showDate": "High Plains",
-      "venue": "High Plains",
-      "templateId": "1",
-      "userId": "2",
-      "id": 22
-    },
-    {
-      "artistName": [],
-      "showDate": [],
-      "venue": [],
-      "templateId": "1",
-      "userId": "1",
-      "id": 23
-    },
-    {
-      "artistName": [],
-      "showDate": [],
-      "venue": [],
-      "templateId": "1",
-      "userId": "1",
-      "id": 24
-    },
-    {
-      "artistName": [],
-      "showDate": [],
-      "venue": [],
-      "templateId": "1",
-      "userId": "1",
-      "id": 25
-    },
-    {
-      "artistName": [],
-      "showDate": [],
-      "venue": [],
-      "templateId": "1",
-      "userId": "1",
-      "id": 26
-    },
-    {
-      "artistName": "New",
-      "showDate": "New",
-      "venue": "New",
-      "templateId": "1",
-      "userId": "1",
-      "id": 27
-    },
-    {
-      "artistName": "Luis",
-      "showDate": "Luis",
-      "venue": "Luis",
-      "templateId": "1",
-      "userId": "1",
-      "id": 28
-    },
-    {
-      "artistName": "Winston",
-      "showDate": "Winston",
-      "venue": "Winston",
-      "templateId": "1",
-      "userId": "1",
-      "id": 29
-    },
-    {
-      "artistName": "Newton",
-      "showDate": "Newton",
-      "venue": "Newton",
-      "templateId": "1",
-      "userId": "1",
-      "id": 30
-    },
-    {
-      "artistName": "Nash",
-      "showDate": "Nash",
-      "venue": "Nash",
-      "templateId": "1",
-      "userId": "1",
-      "id": 31
-    },
-    {
-      "artistName": "Test",
-      "showDate": "Test",
-      "venue": "Test",
-      "templateId": "1",
-      "userId": "1",
-      "id": 32
-    },
-    {
-      "artistName": "Steve",
-      "showDate": "Steve",
-      "venue": "Steve",
-      "templateId": "1",
-      "userId": "1",
-      "id": 33
     }
   ]
 }
