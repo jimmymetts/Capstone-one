@@ -1,6 +1,9 @@
 import React, { Component } from "react"
 import "./PosterTemplateOne.css"
 
+import DownloadLink from "react-download-link";
+import html2canvas from 'html2canvas';
+
 let myUser = sessionStorage.getItem(
     "credentials",
   )
@@ -21,6 +24,8 @@ export default class PosterTemplateOne extends Component {
         .then(() => this.props.history.push("/myPosters"));
     }
 
+
+    
     render() {
         return (
             <React.Fragment>
@@ -29,7 +34,7 @@ export default class PosterTemplateOne extends Component {
                     <div className="EventsBorderCard">
 
                         <div className="TemplateOneOutterBorder" >
-                            <center><font size="24"> </font></center>
+                        <center><font size="24">SHOWCASE!</font></center>
                             <br></br>
                             <div className="TemplateOneContent">
                                 <br></br>
@@ -60,7 +65,15 @@ export default class PosterTemplateOne extends Component {
                         <button className="btn btn-dark"
                             onClick={() => {this.props.history.push("/posterPageTwo") }}>Back</button>
                            
-                        
+                 <DownloadLink
+                         filename="myfile.txt"
+                         exportFile={() => Promise.resolve("NOT A SHOW POSTER YET!!")}
+                     >
+                             Save to disk
+                    >
+                            
+                </DownloadLink>
+
                     </div>
 
 
@@ -71,3 +84,32 @@ export default class PosterTemplateOne extends Component {
         )
     }
 }
+
+// {() => this.props.artistName}
+
+
+
+
+// <div className="TemplateOneOutterBorder" >
+//                             <center><font size="22"> </font></center>
+//                             <br></br>
+//                             <div className="TemplateOneContent">
+//                                 <br></br>
+//                                 <br></br>
+//                                 <center><font size="14"> {this.props.artistName}</font></center>
+//                                 <br></br>
+//                                 <br></br>
+//                                 <center><h2>{this.props.showDate}</h2></center>
+//                                 <br></br>
+//                                 <br></br>
+//                                 <center><h2>{this.props.venue}</h2></center>
+
+//                             </div>
+
+
+//                             <div className="form-group">
+//                                 <label htmlFor="noteType"></label>
+
+//                             </div>
+
+//                         </div>

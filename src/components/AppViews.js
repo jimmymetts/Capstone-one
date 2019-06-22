@@ -13,6 +13,11 @@ import PosterTemplateThree from "./PosterTemplateThree/PosterTemplateThree";
 import PosterTemplateFour from "./PosterTemplateFour/PosterTemplateFour";
 import Registration from "./registration/RegistrationPage"
 import MyPosters from "./myPosters/MyPosters";
+import PosterEditForm from "./PosterEditForm"
+import Welcome from "./Welcome/Welcome"
+import Welcome2 from "./Welcome/Welcome2"
+import WelcomeBlank from "./Welcome/WelcomeBlank"
+
 
 
 export default class AppViews extends Component {
@@ -74,8 +79,8 @@ export default class AppViews extends Component {
             .then(window.location.reload())
     };
 
-        editPosters = (editedPosters) => {
-            return DbCalls.putEvents(editedPosters)
+        editPosters = (posterId, editedPoster) => {
+            return DbCalls.put(posterId, editedPoster )
                 .then(() => DbCalls.getAllPosters())
                 .then(posters => {
                     this.setState({
@@ -93,6 +98,36 @@ export default class AppViews extends Component {
         return (
             <React.Fragment >
 
+
+<Route exact path="/welcome"
+                    render={(props) => {
+                        return <Welcome {
+                            ...props
+                        }
+                        users={this.state.users}
+                        addUser={this.addUser}/>
+                    }
+                } />
+
+<Route exact path="/welcome2"
+                    render={(props) => {
+                        return <Welcome2 {
+                            ...props
+                        }
+                        users={this.state.users}
+                        addUser={this.addUser}/>
+                    }
+                } />
+
+<Route exact path="/welcomeBlank"
+                    render={(props) => {
+                        return <WelcomeBlank {
+                            ...props
+                        }
+                        users={this.state.users}
+                        addUser={this.addUser}/>
+                    }
+                } />
 
 <Route exact path="/registration"
                     render={(props) => {
@@ -211,15 +246,14 @@ export default class AppViews extends Component {
                                         />
                                 }
                                 } />
-                        {/* <Route path="/myPosters/:posterId(\d+)/edit"
+                        <Route path="/posters/:posterId(\d+)/edit"
                             render={props => {
-                                return <MyPosters {
+                                return <PosterEditForm {
                                     ...props
                                 }
-                                    events={this.state.events}
-                                    putPosters={this.putPosters} />
+                                editPosters={this.editPosters} />
                             }
-                            } /> */}
+                            } />
 
 
                            

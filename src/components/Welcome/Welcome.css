@@ -4,26 +4,18 @@
 .PageOneCard {
     box-shadow: rgb(108, 108, 106);
     border-style: double;
-    border-width: 75px;
+    border-width: 15px;
     border-radius: 40px;
     margin: 0px;
     padding: 3em;
-    background-color:black ;
+    background-color:black;
     font-family: 'Shrikhand', cursive;
-    color: white;
+    color: #E8B010;
     font-size: x-large;
-    
-    
 }
 
-
-.flex {
-    display : flex;
-    height : auto;
-    min-height : 100%;
-    }
 .textColor {
-    color: white
+    color: #E8B010
 }
 
 /* effects input page one */
@@ -33,25 +25,11 @@
     box-shadow: rgb(108, 108, 106);
     border-radius: 0px;
     padding: 5em;
-    background-color: black;
+    background-color: #E13D09;
     
 }
 
 .buttonSpacing{
     margin-left: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

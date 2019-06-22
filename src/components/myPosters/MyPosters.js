@@ -82,7 +82,7 @@ export default class MyPosters extends Component {
                     </button>
                     <button className="btn btn-dark buttonSpacing"
                             onClick={() => {
-                                this.props.history.push(`/news/${onePoster.id}/edit`);}}>Edit Poster
+                                this.props.history.push(`/posters/${onePoster.id}/edit`);}}>Edit Poster
                     </button>
                     <button className="btn btn-warning buttonSpacing"
                             onClick={() => { this.props.history.push("/posterTemplateTwo") }}>Download PDF</button>
@@ -120,7 +120,7 @@ export default class MyPosters extends Component {
                     </button>
                     <button className="btn btn-dark buttonSpacing"
                             onClick={() => {
-                                this.props.history.push(`/news/${onePoster.id}/edit`);}}>Edit Poster
+                                this.props.history.push(`/posters/${onePoster.id}/edit`);}}>Edit Poster
                     </button>
                     <button className="btn btn-warning buttonSpacing"
                             onClick={() => { this.props.history.push("/posterTemplateThree") }}>Download PDF</button>
@@ -158,7 +158,7 @@ export default class MyPosters extends Component {
                     </button>
                     <button className="btn btn-dark buttonSpacing"
                             onClick={() => {
-                                this.props.history.push(`/news/${onePoster.id}/edit`);}}>Edit Poster
+                                this.props.history.push(`/posters/${onePoster.id}/edit`);}}>Edit Poster
                     </button>
                     <button className="btn btn-warning buttonSpacing"
                             onClick={() => { this.props.history.push("/posterTemplateFour") }}>Download PDF</button>

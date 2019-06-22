@@ -14,7 +14,15 @@ class NavBar extends Component {
                 <nav className="navbar navbar-light light-blue flex-md-nowrap p-0 shadow">
 
                     <ul className="nav nav-pills">
-
+                        <li className="nav-item">
+                            <Link className="nav-link text-l" light to="/Welcome">Welcome</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link text-l" light to="/Welcome2">Welcome</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link text-l" light to="/WelcomeBlank">Welcome Blank</Link>
+                            </li>
+                        </li>
                         <li className="nav-item">
                             <Link className="nav-link text-l" light to="/login">Login In</Link>
                         </li>

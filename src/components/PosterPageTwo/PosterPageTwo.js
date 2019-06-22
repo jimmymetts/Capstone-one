@@ -12,7 +12,8 @@ export default class PosterPageTwo extends Component {
          <div className="EventsBorderCard">
            
          <div className="TemplateOneOutterBorder" id="1" >
-             <center><font size="24"> </font></center>             
+             
+         <center><font size="26">SHOWCASE!</font></center>          
                   <br></br>
          <div className="TemplateOneContent">               
              
@@ -48,7 +49,7 @@ export default class PosterPageTwo extends Component {
            
            <div className="TemplateTwoOutterBorder" id="2">
            
-            <center><font size="24"> </font></center>
+           <center><font size="24">SHOWCASE!</font></center>
                     <br></br>
                  <div className="TemplateTwoContent">
                         
@@ -79,6 +80,7 @@ export default class PosterPageTwo extends Component {
                 <div className="EventsBorderCard">
            
                      <div className="TemplateThreeOutterBorder" id="3" >
+                     <center><font size="24">SHOWCASE!</font></center>
           
                          <center><font size="24"> </font></center>
                              <br></br>
@@ -115,7 +117,7 @@ export default class PosterPageTwo extends Component {
            
                  <div className="TemplateFourOutterBorder" id="4">
 
-                        <center><font size="24"> CONCERT!</font></center>
+                        <center><font size="24">SHOWCASE!</font></center>
                          <br></br>
                     <div className="TemplateFourContent"> 
                              <br></br>

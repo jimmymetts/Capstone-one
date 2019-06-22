@@ -50,14 +50,15 @@ export default {
     }).then(e => e.json())
   },
 
-/* added edit function */
-putPosters(editedPosters) {
-  return fetch(`${remoteURL}/posters/${editedPosters.id}`, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(editedPosters)
-  }).then(e => e.json());
-}
+  /* added edit function */
+  put(posterId, existingPoster){
+    return fetch(`${remoteURL}/posterData/${posterId}`,{
+      method:'PUT',
+      headers:{
+        "Content-Type": "application/JSON"
+      },
+      body:JSON.stringify(existingPoster)
+    })
+  }
+
 }
