@@ -42,44 +42,36 @@
       "id": 7
     },
     {
-      "artistName": "Stealers Wheel",
-      "showDate": "June 20,  1978",
-      "venue": "Exit Inn",
+      "id": 9,
+      "artistName": "Emily Loggins",
+      "showDate": "June 29, 2019",
+      "venue": "The Basement East",
       "templateId": "4",
-      "userId": "1",
-      "id": 9
+      "userId": "1"
     },
     {
+      "id": 10,
       "artistName": "Emmylou Harris",
-      "showDate": "June 21, 2019",
+      "showDate": "June 22, 2019",
       "venue": "The Ryman",
       "templateId": "1",
-      "userId": "1",
-      "id": 10
+      "userId": "1"
     },
     {
+      "id": 11,
       "artistName": "Steely Dan",
-      "showDate": "July 31, 2019",
+      "showDate": "July 31, 2017",
       "venue": "BridgeStone",
       "templateId": "1",
-      "userId": "1",
-      "id": 11
+      "userId": "1"
     },
     {
+      "id": 12,
       "artistName": "Tedeschi Trucks Band",
       "showDate": "August 21, 2019",
-      "venue": "Asend",
+      "venue": "Ascend",
       "templateId": "3",
-      "userId": "1",
-      "id": 12
-    },
-    {
-      "artistName": "The Stray Birds",
-      "showDate": "June 22, 2019",
-      "venue": "The Basement East",
-      "templateId": "2",
-      "userId": "1",
-      "id": 13
+      "userId": "1"
     },
     {
       "artistName": "The Steel Drivers",
@@ -90,52 +82,28 @@
       "id": 14
     },
     {
+      "id": 15,
       "artistName": "The Band ",
       "showDate": "November 25, 1976. ",
-      "venue": " Winterland Ballroom ",
+      "venue": "Winterland Ballroom  (The Last Waltz)",
       "templateId": "1",
-      "userId": "1",
-      "id": 15
+      "userId": "1"
     },
     {
-      "artistName": "The Band",
-      "showDate": "Now",
-      "venue": "Nss",
-      "templateId": "1",
-      "userId": "1",
-      "id": 16
-    },
-    {
-      "artistName": "metts",
-      "showDate": "metts",
-      "venue": "metts",
-      "templateId": "4",
-      "userId": "1",
-      "id": 17
-    },
-    {
-      "artistName": "metts",
-      "showDate": "metts",
-      "venue": "metts",
-      "templateId": "3",
-      "userId": "1",
-      "id": 18
-    },
-    {
-      "artistName": "metts",
-      "showDate": "metts",
-      "venue": "metts",
-      "templateId": "4",
-      "userId": "1",
-      "id": 19
-    },
-    {
-      "artistName": "The Stray Birds",
-      "showDate": "June 15, 2017",
+      "id": 28,
+      "artistName": "The Red Clay Strays",
+      "showDate": "July 9, 2019",
       "venue": "The Basement",
-      "templateId": "2",
+      "templateId": "4",
+      "userId": "1"
+    },
+    {
+      "artistName": "Elllie ASh",
+      "showDate": "June 21, 2019",
+      "venue": "The Bluebird Cafe",
+      "templateId": "4",
       "userId": "1",
-      "id": 20
+      "id": 29
     }
   ]
 }

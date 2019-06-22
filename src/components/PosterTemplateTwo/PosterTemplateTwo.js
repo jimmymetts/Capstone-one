@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import "./PosterTemplateTwo.css"
+import DownloadLink from "react-download-link";
 
 let myUser = sessionStorage.getItem(
     "credentials",
@@ -29,7 +30,7 @@ export default class PosterTemplatetwo extends Component {
                     <div className="EventsBorderCard">
 
                         <div className="TemplateTwoOutterBorder" >
-                            <center><font size="24"> </font></center>
+                            <center><font size="24">SHOWCASE!</font></center>
                             <br></br>
                             <div className="TemplateTwoContent">
                                 <br></br>
@@ -59,6 +60,15 @@ export default class PosterTemplatetwo extends Component {
 
                         <button className="btn btn-dark"
                              onClick={() => {this.props.history.push("/posterPageTwo") }}>Back</button>
+                         
+                         <DownloadLink
+                         filename="myfile.txt"
+                         exportFile={() => Promise.resolve("NOT A SHOW POSTER YET!!")}
+                     >
+                             Save to disk
+                    >
+                            
+                </DownloadLink>
                          
                     </div>
 
