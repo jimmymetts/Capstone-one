@@ -1,8 +1,10 @@
 import React, { Component } from "react"
 import "./PosterTemplateOne.css"
+// import testimage from '../Images/PdfTest.jpeg'
 
-import DownloadLink from "react-download-link";
-import html2canvas from 'html2canvas';
+
+
+
 
 let myUser = sessionStorage.getItem(
     "credentials",
@@ -29,14 +31,18 @@ export default class PosterTemplateOne extends Component {
     render() {
         return (
             <React.Fragment>
-
+                <section className='TemplateOnePageBackgroundColor'>
                 <section className="TemplatesCardOne" id="1">
-                    <div className="EventsBorderCard">
-
-                        <div className="TemplateOneOutterBorder" >
+                                    
+                    <div >
+                                           
+                        <div className="TemplateOneOutterBorder"  >
+                                      
                         <center><font size="24">SHOWCASE!</font></center>
-                            <br></br>
+                           
+                            
                             <div className="TemplateOneContent">
+                            <br></br>
                                 <br></br>
                                 <br></br>
                                 <center><font size="14"> {this.props.artistName}</font></center>
@@ -46,37 +52,28 @@ export default class PosterTemplateOne extends Component {
                                 <br></br>
                                 <br></br>
                                 <center><h2>{this.props.venue}</h2></center>
-
+                                
                             </div>
 
 
                             <div className="form-group">
                                 <label htmlFor="noteType"></label>
-
+                               
                             </div>
-
                         </div>
-                        <button className="btn btn-warning"
-                            onClick={() => { this.props.history.push("/posterTemplateFour") }}>Download PDF</button>
+                        <button className="btn btn-warning tempOnedownloadbtn"
+                            onClick={() => { this.props.history.push("/ReactPDFPageOne") }}>Download PDF</button>
 
-                        <button className="btn btn-success"
+                        <button className="btn btn-success tempOneSavebtn"
                             onClick={() => { this.constructNewPoster() }}>Save</button>
 
-                        <button className="btn btn-dark"
+                        <button className="btn btn-dark tempOneBackbtn"
                             onClick={() => {this.props.history.push("/posterPageTwo") }}>Back</button>
-                           
-                 <DownloadLink
-                         filename="myfile.txt"
-                         exportFile={() => Promise.resolve("NOT A SHOW POSTER YET!!")}
-                     >
-                             Save to disk
-                    >
-                            
-                </DownloadLink>
 
                     </div>
 
 
+                </section>
                 </section>
             </React.Fragment>
 
@@ -84,32 +81,3 @@ export default class PosterTemplateOne extends Component {
         )
     }
 }
-
-// {() => this.props.artistName}
-
-
-
-
-// <div className="TemplateOneOutterBorder" >
-//                             <center><font size="22"> </font></center>
-//                             <br></br>
-//                             <div className="TemplateOneContent">
-//                                 <br></br>
-//                                 <br></br>
-//                                 <center><font size="14"> {this.props.artistName}</font></center>
-//                                 <br></br>
-//                                 <br></br>
-//                                 <center><h2>{this.props.showDate}</h2></center>
-//                                 <br></br>
-//                                 <br></br>
-//                                 <center><h2>{this.props.venue}</h2></center>
-
-//                             </div>
-
-
-//                             <div className="form-group">
-//                                 <label htmlFor="noteType"></label>
-
-//                             </div>
-
-//                         </div>

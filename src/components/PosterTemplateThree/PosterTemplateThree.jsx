@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import "./PosterTemplateThree.css"
-import DownloadLink from "react-download-link";
 
 let myUser = sessionStorage.getItem(
     "credentials",
@@ -27,53 +26,46 @@ export default class PosterTemplateThree extends Component {
     render() {
         return (
             <React.Fragment>
+                <section className='TemplateOnePageBackgroundColor'>
+                    <section className="TemplatesCardThree" >
+                        <div className="EventsBorderCard">
 
-                <section className="TemplatesCardThree" id="3">
-                    <div className="EventsBorderCard">
+                            <div className="TemplateThreeOutterBorder" id="3">
 
-                        <div className="TemplateThreeOutterBorder" >
-                            <center><font size="24">SHOWCASE!</font></center>
-                            <br></br>
-                            <div className="TemplateThreeContent">
-                                <br></br>
-                                <br></br>
-                                <center><font size="14"> {this.props.artistName}</font></center>
-                                <br></br>
-                                <br></br>
-                                <center><h2>{this.props.showDate}</h2></center>
-                                <br></br>
-                                <br></br>
-                                <center><h2>{this.props.venue}</h2></center>
+                                <p className="ShowCaseTempThree"><center><font size="28">SHOWCASE!</font></center></p>
+
+                                <div className="TemplateThreeContent">
+                                    <br></br>
+                                    <br></br>
+                                    <center><font size="14"> {this.props.artistName}</font></center>
+                                    <br></br>
+                                    <br></br>
+                                    <center><h2>{this.props.showDate}</h2></center>
+                                    <br></br>
+                                    <br></br>
+                                    <center><h2>{this.props.venue}</h2></center>
+
+                                </div>
+
+
+                                <div className="form-group">
+                                    <label htmlFor="noteType"></label>
+
+                                </div>
 
                             </div>
+                            <button className="btn btn-warning tempThreedownloadbtn"
+                                onClick={() => { this.props.history.push("/ReactPDFPageThree") }}>Download PDF</button>
 
+                            <button className="btn btn-success tempThreeSavebtn"
+                                onClick={() => { this.constructNewPoster() }}>Save</button>
 
-                            <div className="form-group">
-                                <label htmlFor="noteType"></label>
-
-                            </div>
-
+                            <button className="btn btn-dark tempThreeBackbtn"
+                                onClick={() => { this.props.history.push("/posterPageTwo") }}>Back</button>
                         </div>
-                        <button className="btn btn-warning"
-                            onClick={() => { this.props.history.push("/posterTemplateFour") }}>Download PDF</button>
-
-                        <button className="btn btn-success"
-                            onClick={() => { this.constructNewPoster() }}>Save</button>
-
-                        <button className="btn btn-dark"
-                            onClick={() => { this.props.history.push("/posterPageTwo") }}>Back</button>
 
 
-                        <DownloadLink
-                            filename="myfile.txt"
-                            exportFile={() => Promise.resolve("NOT A SHOW POSTER YET!!")}
-                        >
-                            Save to disk
-                   >
-                    </DownloadLink>
-                    </div>
-
-
+                    </section>
                 </section>
             </React.Fragment>
 

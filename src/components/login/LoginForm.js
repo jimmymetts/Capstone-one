@@ -1,5 +1,8 @@
 import React, { Component } from "react"
-// import "../login/Login.css"
+import "../login/Login.css"
+
+import { Button, Form, FormGroup, Label, Input,  } from 'reactstrap';
+
 
 
 export default class Login extends Component {
@@ -28,7 +31,7 @@ export default class Login extends Component {
             window.alert("Must enter email & password to login");
         }
         else if(!matchUser){
-            window.alert("User not found, please register");
+            window.alert("User not found");
           } else {
         sessionStorage.setItem(
             "credentials",
@@ -36,13 +39,6 @@ export default class Login extends Component {
             )
             this.props.history.push("/PosterPageOne");
             window.alert(`Welcome back ${matchUser.name}!`)
-
-            let myUser = sessionStorage.getItem(
-                "credentials",
-                matchUser.id, 
-            )
-            
-            console.log(myUser)
         }
     }
 
@@ -56,14 +52,13 @@ export default class Login extends Component {
         <div className="PageOneCard" >
             <div className="RegisterWelcome">
             
-              <h1> Welcome to Show Poster NOW! </h1>
-              <br></br>
-              
-              </div>
-              
-            <form
+              <p className="LoginFormLineWelcome"><h1> Show Poster NOW! </h1></p>
+                <br></br>
+                <br></br>
+            </div>
+            <form 
             className="LoginForm">
-                <h1 className="">Login</h1>
+                <h2 className="">Login</h2>
                 <label htmlFor="inputEmail">
                     Email address:</label>
                 
@@ -71,6 +66,8 @@ export default class Login extends Component {
                        id="email"
                        placeholder=""
                        required="" autoFocus="" />
+                       <br></br>
+                       <br></br>
                        <br></br>
                 <label htmlFor="inputPassword">
                     Password:</label>
@@ -80,15 +77,15 @@ export default class Login extends Component {
                        placeholder=""
                        required="" />
                        <br></br>
+                       <br></br>
+                        
                 <button type="submit"
                 className="btn btn-primary LoginSubmit" onClick={this.handleLogin}>Login</button>
+             
                 
-                <br></br>
-                <p> Don't have an account? </p>
-                <button className="btn btn-primary" onClick={() => this.props.history.push("/registration")}>
-                    Register
-                </button>
+
             </form>
+           
 
             </div>
             </div>
@@ -98,8 +95,18 @@ export default class Login extends Component {
 }
 
 
+
+
+
    // componentDidMount() {
     //     if(sessionStorage.getItem("credentials") !== null){
     //         sessionStorage.removeItem("credentials")
     //     }
     // }
+
+
+
+                    {/* <p> Don't have an account? </p> */}
+                {/* <button className="btn btn-primary" onClick={() => this.props.history.push("/registration")}>
+                    Register
+                </button> */}

@@ -41,15 +41,40 @@
 
 .TemplateFourOutterBorder {
     box-shadow: rgb(108, 108, 106);
-    border-style: double;
+    /* border-style: double;
     border-width: 15px;
-    border-radius: 40px;
+    border-radius: 40px; */
     margin: 0px;
     padding: 3em;
-    background-color:#0AB696;
-    font-family: 'Shrikhand', cursive;
-    color: white;
+    /* background-color:#0AB696; */
+    font-family: 'KeepOnTruckin';
+    color:#E84F11;
     font-size: x-large;
+}
+
+.TemplateFourOutterBorder {
+    
+    background-image: url(../Images/vector-retro-style.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 590px 740px;
+    /* box-shadow: 20px 20px 5px grey; */
+   
+    /* box-shadow: 20px 20px 5px grey; */
+    
+  }
+  .TemplateOnePageBackgroundColor {
+    background-color: hsl(0, 1%, 83%);
+
+}
+
+.pageBackground{                      /* placement of background image */
+    position: 'absolute';
+    Width: '100%';
+    Height: '100%';
+    display: 'block';
+    height: '100%';
+    width: '100%'
 }
 
 /* inner divs - container around input form - where DOM & keeps div from resizing */
@@ -91,10 +116,10 @@
     padding: 0px;
     height: 500px;
     width: 400px;
-    border-radius: 40px;
-    border-style: double;
-    border-width: 15px;
-    background: black;
+    /* border-radius: 30px;
+    border-style: solid;
+    border-width: 5px; */
+    /* background: black; */
     
 }
 
@@ -136,8 +161,6 @@
     justify-content: space-evenly;
     padding: 2em;
 }
-
-
 /* centers button in page */
 /* .EventsButton {
     display: flex;

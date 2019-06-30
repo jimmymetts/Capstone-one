@@ -2,38 +2,43 @@
 /* container around input form */
 
 .PageOneCard {
-    box-shadow: rgb(108, 108, 106);
+    /* box-shadow: rgb(108, 108, 106); */
     border-style: double;
-    border-width: 75px;
+    border-width: 20px;
     border-radius: 40px;
     margin: 0px;
     padding: 3em;
-    background-color:black ;
+    background-color:hsl(0, 1%, 83%) ;
     font-family: 'Shrikhand', cursive;
-    color: white;
+    color: black;
     font-size: x-large;
-    
     
 }
 
+.posterForm {
+    margin-top: 0px;
+    margin-bottom: -30px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
 
-.flex {
+/* .flex {
     display : flex;
     height : auto;
     min-height : 100%;
     }
 .textColor {
     color: white
-}
+} */
 
 /* effects input page one */
 .EventsForm {
     display: flex;
     justify-content: space-evenly;
-    box-shadow: rgb(108, 108, 106);
+    /* box-shadow: rgb(108, 108, 106); */
     border-radius: 0px;
-    padding: 5em;
-    background-color: black;
+    padding: 9em;
+    background-color: hsl(0, 1%, 83%);
     
 }
 
@@ -41,6 +46,26 @@
     margin-left: 10px;
 }
 
+/* .tempOnedownloadbtn {
+    margin-top: -30px;
+    margin-left: 2px;
+}
+.tempOneSavebtn {
+    margin-top: -30px;
+    margin-left: 2px;
+}
+.tempOneBackbtn {
+    margin-top: -30px;
+    margin-left: 2px;
+}
+.MyPostersOneDeletebtn {
+    margin-top: -30px;
+    margin-left: 2px;
+}
+.MyPostersOneEditbtn {
+    margin-top: -30px;
+    margin-left: 2px;
+} */
 
 
 

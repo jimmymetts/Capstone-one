@@ -3,17 +3,22 @@
 
 
 .TemplateTwoOutterBorder {
-    box-shadow: rgb(108, 108, 106);
-    border-style: double;
-    border-width: 15px;
-    border-radius: 40px;
     margin: 0px;
     padding: 3em;
-    background-color: black;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Preview', sans-serif;
+    color:#FC8724;
     font-size: x-large;
 }
 
+.TemplateTwoOutterBorder {
+    
+    background-image: url(../Images/Abomb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 546px 770px;
+    /* box-shadow: 20px 20px 5px grey; */
+    
+  }
 
 
 /*  */
@@ -32,78 +37,55 @@
 } */
 
 .TemplateTwoContent {
-    padding: 0px;
-    height: 500px;
-    width: 400px;
-    border-radius: 40px;
-    border-style: double;
-    border-width: 15px;
-    background: gray;
-    
-}
 
-
-
-/* .TemplateFourContent {
-    padding: 0px;
-    height: 500px;
-    width: 400px;
-    border-radius: 40px;
-    border-style: double;
-    border-width: 15px;
-    background: black;
-    
-} */
-
-
-/* below -  outside div & border of each poster on template page */
-
-.TemplatesCardOne {                    
+    /* display: flex;
+    justify-content: space-around; */
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    padding: 2em;
-    
-
-}
-
-/* .TemplatesCardTwo {                    
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    padding: 2em;
-    
-} */
-
-
-/* below -  outside div & border of each poster on template page */
-
-/* .TemplatesCardThree {                    
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    padding: 2em;
-} */
-
-/* below -  outside div & border of each poster on template page */
-
-/* .TemplatesCardFour {                    
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    padding: 2em;
-} */
-
-
-/* centers button in page */
-/* .EventsButton {
-    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: center;
     justify-content: center;
+      
+    padding: 0px;
+    height: 600px;
+    width: 400px;
+   
+    
+}
+
+.TemplateOnePageBackgroundColor {
+    background-color: hsl(0, 1%, 83%);
+
+}
+
+/* below -  outside div & border of each poster on template page */
+
+.TemplatesCardTwo {                    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
     padding: 2em;
-} */
 
+}
 
-/* .icon--template {
-    margin-top: -425px;
-    z-index: 1;
-} */
+.tempTwodownloadbtn {
+    margin-top: -100px;
+    margin-left: 2px;
+}
+.tempTwoSavebtn {
+    margin-top: -100px;
+    margin-left: 2px;
+}
+.tempTwoBackbtn {
+    margin-top: -100px;
+    margin-left: 2px;
+}
+.MyPostersTwoDeletebtn {
+    margin-top: -100px;
+    margin-left: 2px;
+}
+.MyPostersTwoEditbtn {
+    margin-top: -100px;
+    margin-left: 2px;
+}
+

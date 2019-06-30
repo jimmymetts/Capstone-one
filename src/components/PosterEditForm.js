@@ -1,6 +1,10 @@
 import React, { Component } from "react"
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, } from 'reactstrap';
 import DbCalls from "../modules/DbCalls"
+import "./EditForm.css"
+
+
+
 
 export default class PosterEditForm extends Component {
     state = {
@@ -21,7 +25,7 @@ export default class PosterEditForm extends Component {
   updateExistingPoster = evt => {
     evt.preventDefault()
     
-    const existingPoster ={
+    const existingPoster = {
       id:this.props.match.params.posterId,
       artistName: this.state.artistName,
       showDate: this.state.showDate,
@@ -31,11 +35,11 @@ export default class PosterEditForm extends Component {
     }
 
     this.props.editPosters(this.props.match.params.posterId, existingPoster)
-    .then(() => this.props.history.push("/myPosters"))
-    .then(() => window.location.reload())
+    .then(() => this.props.history.push("/MyPosters"))
+
   }
 
-    componentDidMount() {
+    componentDidMount() {      /* gets data currently in poster - current poster and all info*/
       DbCalls.getPoster(this.props.match.params.posterId)
       .then(poster => {
         this.setState({
@@ -49,31 +53,41 @@ export default class PosterEditForm extends Component {
       });
     };
 
+/* edit form below */
+
     render() {
         return(
             <React.Fragment>
 
-<div className="EventsForm">
+<div className="EventsForm">      
         <div className="PageOneCard" >
+        <section className="EditForm" >
+        <center><font size="10">Edit Show Poster </font></center>
+        <br></br>
                 <Form  >
-        <FormGroup className="textColor" >
+        <FormGroup className="textColor">
           <Label  for="artistName">Artist Name</Label>
           <Input type="text" name="name" id="artistName" required={true} onChange={this.handleFieldChange} placeholder={this.state.artistName} />
         </FormGroup>
+        <br></br>
         <FormGroup className="textColor">
           <Label  for="showDate">Show Date</Label>
           <Input type="text" name="name" id="showDate" required={true} onChange={this.handleFieldChange} placeholder={this.state.showDate} />
         </FormGroup>
+        <br></br>
         <FormGroup className="textColor">
           <Label  for="venue">Venue</Label>
           <Input type="text" name="name" id="venue" required={true} onChange={this.handleFieldChange} placeholder={this.state.venue} />
         </FormGroup>
+        
       </Form>
       <Button  onClick={this.updateExistingPoster}>Update</Button>
+      </section>
 
       </div>
 
 </div>
+
             </React.Fragment>
         )
     }

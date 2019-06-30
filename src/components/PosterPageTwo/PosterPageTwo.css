@@ -1,8 +1,47 @@
 
+.templatesBackgroundColor {
+    background-color: hsl(0, 1%, 83%)
+    /* background-image: url(../Images/vector-scratched.jpg); */
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    /* background-attachment: fixed; */
+    /* height: 100%;  */
+    /* width: 100%; */
+    /* background-size: cover; */
+}
+
+.buttonUpOne{
+    margin-top: -80px;
+    margin-left: 8px;
+}
+.buttonUpTwo{
+    margin-top: -90px;
+    margin-left: 2px;
+}
+.buttonUpThree{
+    margin-top: -200px;
+    margin-left: 5px;
+}
+.buttonUpFour{
+    margin-top: -30px;
+    margin-left: px;
+}
+
+
+.ShowCase {
+    margin-top: 150px;
+    margin-left: px;
+}
+
+/* .pageTwoBackImg */
+
+
+
+
 /* outer border divs */
 
 
-.TemplateTwoOutterBorder {
+/* .TemplateTwoOutterBorder {
     box-shadow: rgb(108, 108, 106);
     border-style: double;
     border-width: 15px;
@@ -11,14 +50,14 @@
     padding: 3em;
     background-color: black;
     font-size: x-large;
-}
+} */
 
 
 
 
 /* inner divs - container around input form - where DOM & keeps div from resizing */
 
-.TemplateOneContent {
+/* .TemplateOneContent {
     padding: opx;
     height: 500px;
     width: 400px;
@@ -27,7 +66,7 @@
     border-width: 15px;
     background: black;
     
-}
+} */
 
 
 
@@ -35,13 +74,13 @@
 
 
 
-.TemplatesCardTwo {                    
+/* .TemplatesCardTwo {                    
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     padding: 2em;
     
-}
+} */
 
 
 

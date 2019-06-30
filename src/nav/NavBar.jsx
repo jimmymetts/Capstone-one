@@ -1,11 +1,9 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
-import Button from "bootstrap/dist/css/bootstrap.min.css"
 
 
-// function refreshPage() {
-//     window.location.reload();
-// }
+
+
 
 class NavBar extends Component {
     render() {
@@ -15,31 +13,22 @@ class NavBar extends Component {
 
                     <ul className="nav nav-pills">
                         <li className="nav-item">
-                            <Link className="nav-link text-l" light to="/Welcome">Welcome</Link>
-                            <li className="nav-item">
-                                <Link className="nav-link text-l" light to="/Welcome2">Welcome</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link text-l" light to="/WelcomeBlank">Welcome Blank</Link>
-                            </li>
+                            <Link className="nav-link text-light" to="/Welcome">Welcome</Link>
+
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-l" light to="/login">Login In</Link>
+                            <Link className="nav-link text-light" to="/login">Login</Link>
                         </li>
 
                         <li className="nav-item">
                             <Link className="nav-link text-light" to="/login">Log Out</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-light" to="/PosterPageOne">New Poster</Link>
+                            <Link className="nav-link text-light" to="/PosterPageOne">Make Your Poster</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link text-light" to="/PosterPageTwo">Poster Templates</Link>
                         </li>
-                        {/* 
-                        <li className="nav-item">
-                            <Link className="nav-link text-light" to="/PosterPageTwo">onClick={refreshPage}>Reload</Link>
-                        </li> */}
 
                         <li className="nav-item">
                             <Link className="nav-link text-light" to="/MyPosters">My Posters</Link>
@@ -58,6 +47,3 @@ export default NavBar
 
 
 
-{/* <li className="nav-item">
-                            <Link className="nav-link text-dark" to="/">Sign Up</Link>
-                        </li> */}
