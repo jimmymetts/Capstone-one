@@ -42,22 +42,6 @@
       "id": 7
     },
     {
-      "id": 10,
-      "artistName": "Emmylou Harris",
-      "showDate": "June 22, 2019",
-      "venue": "The Exit Inn",
-      "templateId": "1",
-      "userId": "1"
-    },
-    {
-      "id": 17,
-      "artistName": "The Red Clay Strays",
-      "showDate": "June 29 / 8PM",
-      "venue": "The Basement",
-      "templateId": "2",
-      "userId": "1"
-    },
-    {
       "artistName": "Adam Sheaffer",
       "showDate": "June 28 / 9PM",
       "venue": "The Ryman",
@@ -66,12 +50,12 @@
       "id": 18
     },
     {
+      "id": 20,
       "artistName": "The Red Clay Strays",
       "showDate": "June 28 / 8PM",
       "venue": "The Basement",
       "templateId": "2",
-      "userId": "1",
-      "id": 20
+      "userId": "1"
     },
     {
       "id": 23,
@@ -147,19 +131,11 @@
     },
     {
       "artistName": "The Red Clay Strays",
-      "showDate": "June 30 / 9PM",
+      "showDate": "July 9 / 9PM",
       "venue": "The Basement",
       "templateId": "2",
       "userId": "1",
       "id": 45
-    },
-    {
-      "artistName": "metts",
-      "showDate": "metts",
-      "venue": "metts",
-      "templateId": "3",
-      "userId": "1",
-      "id": 46
     }
   ]
 }

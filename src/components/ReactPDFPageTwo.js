@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   //     fontFamily: 'AmazingKids'
   // },
   pdfPageTwoTop: {
-      fontSize:'40',
+      fontSize:'38',
       color:'#FC8724',
       textAlign:'center',
       margin:0,

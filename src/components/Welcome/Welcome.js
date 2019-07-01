@@ -23,6 +23,7 @@ export default class Welcome extends Component {
           <center><font size="20">Show Poster NOW!</font></center>
               <br></br>
             <br></br>
+            <br></br>
 
       </div>
       </div>

@@ -80,10 +80,11 @@ const styles = StyleSheet.create({
     //     fontFamily: 'AmazingKids'
     // },
     pdfPageFourTop: {
-        fontSize:'42',
+        fontSize:'38',
         color:'#E84F11',
         textAlign:'center',
-        margin:0,
+        marginLeft:20,
+        marginRight: 20,
         marginTop:110,  /* will push all 3 text lines down at the same time */
         fontFamily: 'Retrotype'
     },

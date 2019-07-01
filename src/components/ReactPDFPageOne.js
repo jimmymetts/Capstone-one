@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     //     fontFamily: 'Jacques Francois Shadow'
     // },
     pdfPageOneTop: {
-        fontSize:'42',
+        fontSize:'38',
         color:'white',
         textAlign:'center',
         margin:0,

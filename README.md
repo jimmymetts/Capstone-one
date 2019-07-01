@@ -1,3 +1,10 @@
+# Welcome to Show Poster NOW!
+
+![alt text] (./components/Images/welcome.png)
+![alt text] (./components/Images/MakePoster.png)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
