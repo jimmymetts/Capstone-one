@@ -1,43 +1,8 @@
 
 /* outer border divs */
 
-/* .TemplateOneOutterBorder {
-    box-shadow: rgb(108, 108, 106);
-    border-style: double;
-    border-width: 15px;
-    border-radius: 40px;
-    margin: 0px;
-    padding: 3em;
-    font-family: 'Jacques Francois Shadow', cursive;
-    background-color:black; 
-    color:white;
-    font-size: x-large;
-} */
 
-/* .TemplateTwoOutterBorder {
-    box-shadow: rgb(108, 108, 106);
-    border-style: double;
-    border-width: 15px;
-    border-radius: 40px;
-    margin: 0px;
-    padding: 3em;
-    background-color: black;
-   
-    font-size: x-large;
-} */
 
-/* .TemplateThreeOutterBorder {
-    box-shadow: rgb(108, 108, 106);
-    border-style: double;
-    border-width: 15px;
-    border-radius: 40px;
-    margin: 0px;
-    padding: 3em;
-    background-color: #E13D09;
-    font-family: 'IM Fell English', serif;
-    color: white;
-    font-size: x-large;
-} */
 
 .TemplateFourOutterBorder {
     box-shadow: rgb(108, 108, 106);
@@ -79,38 +44,7 @@
 
 /* inner divs - container around input form - where DOM & keeps div from resizing */
 
-/* .TemplateOneContent {
-    padding: 0px;
-    height: 500px;
-    width: 400px;
-    border-radius: 40px;
-    border-style: double;
-    border-width: 15px;
-    background: black;
-    
-} */
 
-/* .TemplateTwoContent {
-    padding: 0px;
-    height: 500px;
-    width: 400px;
-    border-radius: 40px;
-    border-style: double;
-    border-width: 15px;
-    background: gray;
-    
-}
-
-.TemplateThreeContent {
-    padding: 0px;
-    height: 500px;
-    width: 400px;
-    border-radius: 40px;
-    border-style: double;
-    border-width: 15px;
-    background: black;
-    
-} */
 
 .TemplateFourContent {
     padding: 0px;
@@ -126,32 +60,6 @@
 
 /* below -  outside div & border of each poster on template page */
 
-/* .TemplatesCardOne {                    
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    padding: 2em;
-    
-
-}
-
-.TemplatesCardTwo {                    
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    padding: 2em;
-    
-} */
-
-
-/* below -  outside div & border of each poster on template page */
-
-/* .TemplatesCardThree {                    
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    padding: 2em;
-} */
 
 /* below -  outside div & border of each poster on template page */
 
@@ -161,15 +69,24 @@
     justify-content: space-evenly;
     padding: 2em;
 }
-/* centers button in page */
-/* .EventsButton {
-    display: flex;
-    justify-content: center;
-    padding: 2em;
+
+.tempFourdownloadbtn {
+    margin-top: -30px;
+    margin-left: 2px;
 }
-
-
-.icon--template {
-    margin-top: -425px;
-    z-index: 1;
-} */
+.tempFourSavebtn {
+    margin-top: -30px;
+    margin-left: 2px;
+}
+.tempFourBackbtn {
+    margin-top: -30px;
+    margin-left: 2px;
+}
+.MyPostersFourDeletebtn {
+    margin-top: -30px;
+    margin-left: 8px;
+}
+.MyPostersFourEditbtn {
+    margin-top: -30px;
+    margin-left: 2px;
+}

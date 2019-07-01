@@ -52,35 +52,33 @@ export default class PosterPageTwo extends Component {
      <section className="TemplatesCardTwo" id="2" >
            <div className="EventsBorderCard">
            
-           <div className="TemplateTwoOutterBorder" >
+                 <div className="TemplateTwoOutterBorder" >
            
-           <center><font size="24"></font></center>
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                <center><font size="24"></font></center>
+                
                  <div className="TemplateTwoContent">
-                        
-                 <br></br>
+                       
                             <br></br>
                             <br></br>
                             <br></br>
-                            <center><font size="14"> {this.props.artistName}</font></center>
+                           <p className="TempTwoTextDown"> <center><font size="16"> {this.props.artistName}</font></center>
                             <br></br>
-                            <br></br>
-                            <center><h2>{this.props.showDate}</h2></center>
-                            <br></br>
-                            <br></br>
-                            <center><h2>{this.props.venue}</h2></center>
                             
+                            <p className="TempTwolineTwo"><center ><h2>{this.props.showDate}</h2></center></p>
+                            <br></br>
+                            
+                            <p className="TempTwolineThree"></p><center><h2>{this.props.venue}</h2></center></p>
+                    
                         </div>
 
-
+                        
               <div className="form-group">
           <label htmlFor="noteType"></label>
          
           </div>
 
            </div>
+           
            <button className="btn btn-dark ChooseThisTemplateBtn buttonUpTwo"
                            onClick={() => {this.props.history.push("/posterTemplateTwo") }}>Choose This Template</button>
            </div>

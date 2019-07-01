@@ -42,21 +42,17 @@ export default class PosterTemplatetwo extends Component {
                             <br></br>
                         
                             <div className="TemplateTwoContent">
-                                <br></br>
-                                <br></br>
-                                
-                                <center><font size="14"> {this.props.artistName}</font></center>
-                                
-                                <br></br>
-                                <br></br>
-                                
-                                <center><h2>{this.props.showDate}</h2></center>
-                               
-                                <br></br>
-                                <br></br>
-                                
-                                <center><h2>{this.props.venue}</h2></center>
-                                
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                           <p className="TempTwoLineOneDown"> <center><font size="16"> {this.props.artistName}</font></center>
+                            <br></br>
+                            
+                            <p className="TempTwolineTwoDown"><center ><h2>{this.props.showDate}</h2></center></p>
+                            <br></br>
+                            
+                            <p className="TempTwolineThreeDown"></p><center><h2>{this.props.venue}</h2></center></p>
+                    
 
                             </div>
 

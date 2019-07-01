@@ -61,22 +61,33 @@ export default class MyPosters extends Component {
                 <div className="EventsBorderCard">
                 
                 <div className="TemplateTwoOutterBorder" id="2" >
-                    <center><font size="24"> </font></center>             
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                <div className="TemplateTwoContent">               
+
+                <center><font size="24"></font></center>
+               
                 <br></br>
                     <br></br>
-                <center><font size="14"> {onePoster.artistName}</font></center>
-                            <br></br>
-                            <br></br>
-                    <center><h2>{onePoster.showDate}</h2></center>
-                            <br></br>
-                            <br></br>
+            <div className="TemplateTwoContent">               
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <center><font size="14"> {onePoster.artistName}</font></center>
+                    <br></br>
+                    
+                   <center><h2>{onePoster.showDate}</h2></center>
+                   <br></br>
+                   
                     <center><h2>{onePoster.venue}</h2></center>
 
                 </div>
+                
+                
                 <div className="form-group">
             <label htmlFor="noteType"></label>
                 
@@ -138,7 +149,7 @@ export default class MyPosters extends Component {
                 <section className="TemplatesCardFour" >
                 <div className="EventsBorderCard">
                 
-                <div className="TemplateFourOutterBorder" id="1" >
+                <div className="TemplateFourOutterBorder" id="4" >
                     <center><font size="24">SHOWCASE! </font></center>             
                         <br></br>
                 <div className="TemplateFourContent">               
@@ -159,10 +170,10 @@ export default class MyPosters extends Component {
             </div>
 
                 </div>
-                    <button className="btn btn-dark"
+                    <button className="btn btn-dark MyPostersFourDeletebtn"
                             onClick={() => this.props.deletePosters(onePoster.id)}>Delete Poster
                     </button>
-                    <button className="btn btn-dark buttonSpacing"
+                    <button className="btn btn-dark buttonSpacing  MyPostersFourEditbtn"
                             onClick={() => {
                                 this.props.history.push(`/posters/${onePoster.id}/edit`);}}>Edit Poster
                     </button>

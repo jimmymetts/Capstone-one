@@ -52,13 +52,13 @@ export default class PosterTemplateFour extends Component {
                             </div>
 
                         </div>
-                        <button className="btn btn-warning"
+                        <button className="btn btn-warning tempFourdownloadbtn"
                             onClick={() => { this.props.history.push("/ReactPDFPageFour") }}>Download PDF</button>
 
-                            <button className="btn btn-info"
+                            <button className="btn btn-info tempFourSavebtn"
                             onClick={() => { this.constructNewPoster() }}>Save</button>
 
-                            <button className="btn btn-dark"
+                            <button className="btn btn-dark tempFourBackbtn"
                         onClick={() => {this.props.history.push("/posterPageTwo") }}>Back</button>
                     </div>
 

@@ -21,36 +21,20 @@
   }
 
 
-/*  */
 
-/* inner divs - container around input form - where DOM & keeps div from resizing */
-
-/* .TemplateOneContent {
-    padding: 0px;
-    height: 500px;
-    width: 400px;
-    border-radius: 40px;
-    border-style: double;
-    border-width: 15px;
-    background: black;
-    
-} */
 
 .TemplateTwoContent {
 
     /* display: flex;
     justify-content: space-around; */
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
-    align-content: flex-end;
+    /* align-content: flex-end; */
     align-items: center;
-    justify-content: center;
-      
+    /* justify-content: center; */  
     padding: 0px;
-    height: 600px;
+    height: 618px;
     width: 400px;
-   
-    
 }
 
 .TemplateOnePageBackgroundColor {
@@ -69,23 +53,39 @@
 }
 
 .tempTwodownloadbtn {
-    margin-top: -100px;
+    margin-top: -120px;
     margin-left: 2px;
 }
 .tempTwoSavebtn {
-    margin-top: -100px;
+    margin-top: -120px;
     margin-left: 2px;
 }
 .tempTwoBackbtn {
-    margin-top: -100px;
+    margin-top: -120px;
     margin-left: 2px;
 }
 .MyPostersTwoDeletebtn {
-    margin-top: -100px;
+    margin-top: -80px;
     margin-left: 2px;
 }
 .MyPostersTwoEditbtn {
-    margin-top: -100px;
+    margin-top: -80px;
     margin-left: 2px;
 }
 
+.TempTwoLineOneDown {
+    margin-top: 234px;
+    margin-left: px;
+    margin-bottom: -100px;
+
+}
+.TempTwolineTwoDown {
+    margin-top: -9px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+.TempTwolineThreeDown {
+    margin-top: -19px;
+    margin-left: 0px;
+    margin-bottom: px;
+}

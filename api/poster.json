@@ -83,30 +83,6 @@
     },
     {
       "artistName": "The Red Clay Strays",
-      "showDate": "July 8 / 9PM",
-      "venue": "The Basement",
-      "templateId": "2",
-      "userId": "1",
-      "id": 24
-    },
-    {
-      "artistName": "The Red Clay Strays",
-      "showDate": "June 28 / 9PM",
-      "venue": "The Basement",
-      "templateId": "2",
-      "userId": "1",
-      "id": 25
-    },
-    {
-      "artistName": "The Red Clay Strays",
-      "showDate": "June 29 / 9PM",
-      "venue": "The Basement",
-      "templateId": "2",
-      "userId": "1",
-      "id": 29
-    },
-    {
-      "artistName": "The Red Clay Strays",
       "showDate": "June 29 / 9PM",
       "venue": "The Basement",
       "templateId": "1",
@@ -114,12 +90,12 @@
       "id": 34
     },
     {
+      "id": 35,
       "artistName": "The Red Clay Strays",
       "showDate": "June 29 / 9PM",
       "venue": "The Basement",
       "templateId": "2",
-      "userId": "1",
-      "id": 35
+      "userId": "1"
     },
     {
       "artistName": "The Red Clay Strays",
@@ -154,76 +130,36 @@
       "id": 39
     },
     {
-      "artistName": "Tom Jones",
+      "artistName": "The Red Clay Strays",
       "showDate": "June 30 / 9PM",
       "venue": "The Basement",
-      "templateId": "1",
-      "userId": "1",
-      "id": 40
-    },
-    {
-      "artistName": "Tom Jones",
-      "showDate": "June 30 / 9PM",
-      "venue": "The Basement",
-      "templateId": "1",
-      "userId": "1",
-      "id": 41
-    },
-    {
-      "artistName": "Tom Jones",
-      "showDate": "June 30 / 9PM",
-      "venue": "The Basement",
-      "templateId": "1",
+      "templateId": "2",
       "userId": "1",
       "id": 42
     },
     {
+      "id": 44,
       "artistName": "The Red Clay Strays",
       "showDate": "June 30 / 9PM",
       "venue": "The Basement",
-      "templateId": "1",
-      "userId": "1",
-      "id": 43
+      "templateId": "4",
+      "userId": "1"
     },
     {
-      "artistName": "The Band",
+      "artistName": "The Red Clay Strays",
       "showDate": "June 30 / 9PM",
       "venue": "The Basement",
-      "templateId": "3",
-      "userId": "1",
-      "id": 44
-    },
-    {
-      "artistName": "The Band",
-      "showDate": "June 30 / 9PM",
-      "venue": "The Basement",
-      "templateId": "3",
+      "templateId": "2",
       "userId": "1",
       "id": 45
     },
     {
-      "artistName": "Red Clay Strays",
-      "showDate": "June 30 / 9 PM",
-      "venue": "The Basement",
-      "templateId": "1",
+      "artistName": "metts",
+      "showDate": "metts",
+      "venue": "metts",
+      "templateId": "3",
       "userId": "1",
       "id": 46
-    },
-    {
-      "artistName": "Red Clay Strays",
-      "showDate": "June 30 / 9PM",
-      "venue": "The Basement",
-      "templateId": "1",
-      "userId": "1",
-      "id": 47
-    },
-    {
-      "id": 48,
-      "artistName": "The Red Clay Strays",
-      "showDate": "June 30 / 9PM",
-      "venue": "The Basement",
-      "templateId": "1",
-      "userId": "1"
     }
   ]
 }

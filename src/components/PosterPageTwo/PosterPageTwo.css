@@ -15,11 +15,11 @@
     margin-left: 8px;
 }
 .buttonUpTwo{
-    margin-top: -90px;
+    margin-top: -9px;
     margin-left: 2px;
 }
 .buttonUpThree{
-    margin-top: -200px;
+    margin-top: -260px;
     margin-left: 5px;
 }
 .buttonUpFour{
@@ -32,6 +32,27 @@
     margin-top: 150px;
     margin-left: px;
 }
+
+
+.TempTwoTextDown {
+    margin-top: 286px;
+    margin-left: px;
+    margin-bottom: -100px;
+
+}
+.TempTwolineTwo {
+    margin-top: -9px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+.TempTwolineThree {
+    margin-top: -19px;
+    margin-left: 0px;
+    margin-bottom: px;
+}
+
+
+
 
 /* .pageTwoBackImg */
 

@@ -17,8 +17,8 @@ export default class PosterPageOne extends React.Component {
     return (
         <div className="EventsForm">
         <div className="PageOneCard" >
-          <center><font size="10">Show Poster NOW!</font></center>
-          {/* <p><font size="10">This is some text!</font></p> */}
+          <center><font size="10">Make Your Poster</font></center>
+          <br></br>
          
           
       <Form className="posterForm" >
