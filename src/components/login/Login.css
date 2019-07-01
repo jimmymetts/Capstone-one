@@ -1,36 +1,51 @@
 /* container around input form */
 
- .PageOneCard{
+ /* .PageOneCard{
     box-shadow: rgb(108, 108, 106);
     border-style: double;
     border-width: 15px;
     border-radius: 40px;
     margin: 0px;
-    padding: 3em;
-    background-color:#F74A24;
+    padding: 3em; 
     font-family: 'Shrikhand', cursive;
     color: #F8AF38;
     font-size: x-large;
-}
+} */
 
 /* .textColor {
     color: #E8B010
 } */
 
 /* effects input page one */
-.LoginForm {
+/* .LoginForm {
     display: flex;
-    justify-content: space-evenly;
-    box-shadow: rgb(108, 108, 106);
+    justify-content: space-evenly; 
     border-radius: 0px;
     padding: 5em;
     background-color: #F74A24;
-} 
+}  */
+/* .LoginWelcome {
+    margin-top: 200px;
+    margin-left: 2px;
+} */
 
 
 /* 
 #E13D09 */
 
+ /* box-shadow: rgb(108, 108, 106); */
 
+/* background-color:#F74A24; */
 
+.LoginForm {
+    margin-top: 0px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
 
+.LoginFormLineWelcome {
+
+    margin-top: 0px;
+    margin-right: 50px;
+    margin-left: 90px;
+}

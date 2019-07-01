@@ -1,5 +1,8 @@
 import React, { Component } from "react"
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import "./Welcome.css"
+import { Button, Form, FormGroup, Label, Input,  } from 'reactstrap';
+// import "./PosterPageOne.css"
+
 
 
 
@@ -9,26 +12,22 @@ export default class Welcome extends Component {
       return(
           <React.Fragment>
 
+<div className='WelcomeBackground'>
 <div className="EventsForm">
         <div className="PageOneCard" >
-          
-          
-        <center><font size="24">Welcome</font></center>
+        <center><font size="20">Welcome</font></center>
 
-        <br></br>
-        <br></br>
-        
-        <center><font size="24">To</font></center>
-        <br></br>
-        <br></br>
-          
-          <center><font size="24">Show Poster NOW!</font></center>
-          <br></br>
-        <br></br>
+              <br></br>
+            <center><font size="20">To</font></center>
+            <br></br>
+          <center><font size="20">Show Poster NOW!</font></center>
+              <br></br>
+            <br></br>
+            <br></br>
 
       </div>
       </div>
-
+      </div>
   
           </React.Fragment>
       )

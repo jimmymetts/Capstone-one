@@ -2,47 +2,75 @@
 /* outer border divs */
 
 .TemplateOneOutterBorder {
-    box-shadow: rgb(108, 108, 106);
-    border-style: double;
+    /* box-shadow: rgb(108, 108, 106); */
+    /* border-style: double;
     border-width: 15px;
-    border-radius: 40px;
-    margin: 0px;
+    border-radius: 40px; */
+    /* margin: 0px; */
     padding: 3em;
     font-family: 'Jacques Francois Shadow', cursive;
-    background-color:black; 
+    /* background-color:black;  */
     color:white;
     font-size: x-large;
+    
 }
 
+.TemplateOneOutterBorder {
+    background-image: url(../Images/black-concrete.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 530px 740px;
+    /* box-shadow: 20px 20px 5px grey; */
+    
+  }
 
 
 /* inner divs - container around input form - where DOM & keeps div from resizing */
 
-/* .TemplateOneContent {
-    padding: 0px;
-    height: 500px;
-    width: 400px;
-    border-radius: 40px;
-    border-style: double;
-    border-width: 15px;
-    background: black;
-    
-} */
+/* template one postion on main page */ 
 
-
-
-
-
-
-/* centers button in page */
-.EventsButton {
+.TemplatesCardOne {                   
     display: flex;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
     padding: 2em;
 }
 
 
-.icon--template {
-    margin-top: -425px;
-    z-index: 1;
+/* inside border */
+.TemplateOneContent {
+    padding: 6px;              /* moves text rows up/down together */
+    height: 580px;
+     width: 400px;  
+    border-radius: 40px; 
+    border-style: solid; 
+    border-width: 5px;                 
+    /* background: black; */
+    
+}
+
+
+.TemplateOnePageBackgroundColor {
+    background-color: hsl(0, 1%, 83%);
+
+}
+.tempOnedownloadbtn {
+    margin-top: -80px;
+    margin-left: 2px;
+}
+.tempOneSavebtn {
+    margin-top: -80px;
+    margin-left: 2px;
+}
+.tempOneBackbtn {
+    margin-top: -80px;
+    margin-left: 2px;
+}
+.MyPostersOneDeletebtn {
+    margin-top: -90px;
+    margin-left: 8px;
+}
+.MyPostersOneEditbtn {
+    margin-top: -90px;
+    margin-left: 2px;
 }

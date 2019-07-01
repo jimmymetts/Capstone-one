@@ -28,3 +28,8 @@ body {
 /* body {
 font-family: 'Shrikhand', cursive;
 } */
+
+iframe{
+  width: 100%;
+  height:100vh;
+}

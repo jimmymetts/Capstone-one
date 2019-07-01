@@ -1,22 +1,23 @@
-import React, { Component } from "react"
-import { Route, Redirect } from 'react-router-dom'
-import Login from "./login/LoginForm"
+import React, { Component } from "react";
+import { Route } from 'react-router-dom';
+import { PDFViewer } from '@react-pdf/renderer';
+import Login from "./login/LoginForm";
 import PosterPageOne from "./PosterPageOne/PosterPageOne";
 import PosterPageTwo from "./PosterPageTwo/PosterPageTwo";
-
-// import ReactPdf from "./reactPdf/ReactPdf"
-import Kennel from "../nav/NavBar";
-import DbCalls from "../modules/DbCalls"
-import PosterTemplateOne from "./PosterTemplateOne/PosterTemplateOne"
-import PosterTemplateTwo from "./PosterTemplateTwo/PosterTemplateTwo"
+import DbCalls from "../modules/DbCalls";
+import PosterTemplateOne from "./PosterTemplateOne/PosterTemplateOne";
+import PosterTemplateTwo from "./PosterTemplateTwo/PosterTemplateTwo";
 import PosterTemplateThree from "./PosterTemplateThree/PosterTemplateThree";
 import PosterTemplateFour from "./PosterTemplateFour/PosterTemplateFour";
-import Registration from "./registration/RegistrationPage"
 import MyPosters from "./myPosters/MyPosters";
-import PosterEditForm from "./PosterEditForm"
-import Welcome from "./Welcome/Welcome"
-import Welcome2 from "./Welcome/Welcome2"
-import WelcomeBlank from "./Welcome/WelcomeBlank"
+import PosterEditForm from "./PosterEditForm";
+import Welcome from "./Welcome/Welcome";
+import ReactPDFPageOne from "./ReactPDFPageOne";
+import ReactPDFPageTwo from "./ReactPDFPageTwo";
+import ReactPDFPageThree from "./ReactPDFPageThree";
+import ReactPDFPageFour from "./ReactPDFPageFour";
+
+
 
 
 
@@ -48,8 +49,7 @@ export default class AppViews extends Component {
             .then(() => DbCalls.getAllUsers())         
             .then(users => newState.users = users)
             .then(() => this.setState(newState))
-
-      
+ 
     }
 
     addPoster = (event) =>
@@ -72,24 +72,23 @@ export default class AppViews extends Component {
       
       deletePosters = (id) => {
         const newState = {};
-        DbCalls.deletePoster(id)
-            .then(DbCalls.getAllPosters())
-            .then(posterData => { newState.Poster = posterData})
-            .then(() => this.setState(newState))
-            .then(window.location.reload())
-    };
+        DbCalls.deletePoster(id)    /* delete Poster in dbcalls */
+            .then(() => DbCalls.getAllPosters())
+            .then(posterData => { newState.posterData = posterData})
+            .then(() => {          
+            this.setState(newState)               
+            })
+    }
 
         editPosters = (posterId, editedPoster) => {
             return DbCalls.put(posterId, editedPoster )
                 .then(() => DbCalls.getAllPosters())
                 .then(posters => {
                     this.setState({
-                        posters: posters
+                        posterData: posters
                     })
                 });
         };
-
-
 
     render() {
         // console.log("State", this.state)
@@ -104,38 +103,7 @@ export default class AppViews extends Component {
                         return <Welcome {
                             ...props
                         }
-                        users={this.state.users}
-                        addUser={this.addUser}/>
-                    }
-                } />
-
-<Route exact path="/welcome2"
-                    render={(props) => {
-                        return <Welcome2 {
-                            ...props
-                        }
-                        users={this.state.users}
-                        addUser={this.addUser}/>
-                    }
-                } />
-
-<Route exact path="/welcomeBlank"
-                    render={(props) => {
-                        return <WelcomeBlank {
-                            ...props
-                        }
-                        users={this.state.users}
-                        addUser={this.addUser}/>
-                    }
-                } />
-
-<Route exact path="/registration"
-                    render={(props) => {
-                        return <Registration {
-                            ...props
-                        }
-                        users={this.state.users}
-                        addUser={this.addUser}/>
+                        />
                     }
                 } />
 
@@ -147,7 +115,7 @@ export default class AppViews extends Component {
                    }
                     } />
 
-                <Route exact path="/PosterPageOne" 
+                <Route exact path="/PosterPageOne"   /*new poster input form */
                     render={(props) => {
                             return <PosterPageOne
                             {...props}
@@ -162,7 +130,7 @@ export default class AppViews extends Component {
                     }
                     } />
 
-                <Route exact path="/posterPageTwo" 
+                <Route exact path="/posterPageTwo"    /* poster template/options page */
                     render={(props) => {
                             return <PosterPageTwo
                             {...props}
@@ -232,7 +200,7 @@ export default class AppViews extends Component {
                                 }
                                 } />
 
-                <Route exact path="/myPosters" 
+                <Route exact path="/myPosters"   /* all posters of user */
                                 render={(props) => {
                                         return <MyPosters
                                         {...props}
@@ -246,7 +214,7 @@ export default class AppViews extends Component {
                                         />
                                 }
                                 } />
-                        <Route path="/posters/:posterId(\d+)/edit"
+                        <Route path="/posters/:posterId(\d+)/edit"   /*poster edit form */
                             render={props => {
                                 return <PosterEditForm {
                                     ...props
@@ -254,6 +222,57 @@ export default class AppViews extends Component {
                                 editPosters={this.editPosters} />
                             }
                             } />
+
+                        <Route exact path="/ReactPDFPageOne"   /* PDF download page */
+                        render={(props) => {
+                            return <PDFViewer> <ReactPDFPageOne 
+                                {...props}
+                                artistName={this.state.artistName}
+                                showDate={this.state.showDate}
+                                venue={this.state.venue}
+                            
+                            />
+                            </PDFViewer>
+                          }
+                          } />
+
+                        <Route exact path="/ReactPDFPageTwo"
+                        render={(props) => {
+                            return <PDFViewer> <ReactPDFPageTwo 
+                                {...props}
+                                artistName={this.state.artistName}
+                                showDate={this.state.showDate}
+                                venue={this.state.venue}
+                            
+                            />
+                            </PDFViewer>
+                          }
+                          } />
+
+                        <Route exact path="/ReactPDFPageThree"
+                        render={(props) => {
+                            return <PDFViewer> <ReactPDFPageThree 
+                            {...props}
+                            artistName={this.state.artistName}
+                            showDate={this.state.showDate}
+                            venue={this.state.venue}
+                            />
+                            </PDFViewer>
+                          }
+                          } />
+                          
+
+                          <Route exact path="/ReactPDFPageFour"
+                        render={(props) => {
+                            return <PDFViewer> <ReactPDFPageFour {
+                                ...props}
+                                artistName={this.state.artistName}
+                                showDate={this.state.showDate}
+                                venue={this.state.venue}
+                            />
+                            </PDFViewer>
+                          }
+                          } />
 
 
                            
@@ -263,21 +282,21 @@ export default class AppViews extends Component {
     }
 
 
-/* took below code (fetch) out of above line 39 - where dbcalls are */
-
-//     fetch("http://localhost:5002/posterData")
-//     .then(r => r.json())
-//     .then(posterTemplates => newState.posterTemplates = posterTemplates)
-//     .then(() => this.setState(newState))
-
-//     DbCalls.getAllUsers()
-//     .then(users => newState.users = users)
-// }
 
 
 
-// handleFieldChange = evt => {
-//     const stateToChange = {};
-//     stateToChange[evt.target.id] = evt.target.value;
-//     this.setState(stateToChange);
-//   };
+
+
+    
+
+
+
+    {/* <Route exact path="/registration"
+                    render={(props) => {
+                        return <Registration {
+                            ...props
+                        }
+                        users={this.state.users}
+                        addUser={this.addUser}/>
+                    }
+                } /> */}
