@@ -133,10 +133,10 @@ export default class PosterPageTwo extends Component {
                                 <center><font size="14"> {this.props.artistName}</font></center>
                                 <br></br>
                                 <br></br>
-                                <center><h1>{this.props.showDate}</h1></center>
+                                <center><h2>{this.props.showDate}</h2></center>
                                 <br></br>
                                 <br></br>
-                                <center><h1>{this.props.venue}</h1></center>
+                                <center><h2>{this.props.venue}</h2></center>
                             
                         </div>
               <div className="form-group">

@@ -12,7 +12,12 @@
       "email": "dek@email.com",
       "password": "test"
     },
-    {}
+    {},
+    {
+      "name": "jmetts",
+      "email": "jimmymettsdev@gmail.com",
+      "id": 3
+    }
   ],
   "posterTemplates": [
     {
@@ -42,100 +47,100 @@
       "id": 7
     },
     {
+      "id": 18,
       "artistName": "Adam Sheaffer",
       "showDate": "June 28 / 9PM",
-      "venue": "The Ryman",
-      "templateId": "3",
-      "userId": "1",
-      "id": 18
-    },
-    {
-      "id": 20,
-      "artistName": "The Red Clay Strays",
-      "showDate": "June 28 / 8PM",
-      "venue": "The Basement",
-      "templateId": "2",
-      "userId": "1"
-    },
-    {
-      "id": 23,
-      "artistName": "The Red Clay Strays",
-      "showDate": "June 29 / 9PM",
-      "venue": "The Basement",
+      "venue": "The Five Spot",
       "templateId": "3",
       "userId": "1"
     },
     {
-      "artistName": "The Red Clay Strays",
-      "showDate": "June 29 / 9PM",
-      "venue": "The Basement",
-      "templateId": "1",
-      "userId": "1",
-      "id": 34
-    },
-    {
-      "id": 35,
-      "artistName": "The Red Clay Strays",
-      "showDate": "June 29 / 9PM",
-      "venue": "The Basement",
-      "templateId": "2",
-      "userId": "1"
-    },
-    {
-      "artistName": "The Red Clay Strays",
-      "showDate": "June 29 / 9PM",
-      "venue": "The Basement",
-      "templateId": "3",
-      "userId": "1",
-      "id": 36
-    },
-    {
-      "artistName": "The Red Clay Strays",
-      "showDate": "June 29 / 9PM",
-      "venue": "The Basement",
-      "templateId": "4",
-      "userId": "1",
-      "id": 37
-    },
-    {
-      "artistName": "The Red Clay Strays",
-      "showDate": "June 30 / 9PM",
-      "venue": "The Basement",
-      "templateId": "2",
-      "userId": "1",
-      "id": 38
-    },
-    {
-      "artistName": "Adam Sheaffer",
-      "showDate": "July 2 / 9PM",
-      "venue": "The Ryman",
-      "templateId": "1",
-      "userId": "1",
-      "id": 39
-    },
-    {
-      "artistName": "The Red Clay Strays",
-      "showDate": "June 30 / 9PM",
-      "venue": "The Basement",
-      "templateId": "2",
-      "userId": "1",
-      "id": 42
-    },
-    {
-      "id": 44,
-      "artistName": "The Red Clay Strays",
-      "showDate": "June 30 / 9PM",
-      "venue": "The Basement",
+      "id": 19,
+      "artistName": "Brenda Long",
+      "showDate": "June 20 / 9PM",
+      "venue": "Rudy's Jazz Room",
       "templateId": "4",
       "userId": "1"
     },
     {
+      "artistName": "Bryan Nilsen",
+      "showDate": "July 5 / 9PM",
+      "venue": "The Station Inn",
+      "templateId": "2",
+      "userId": "1",
+      "id": 20
+    },
+    {
+      "artistName": "John Wark",
+      "showDate": "July 4th / 10PM",
+      "venue": "Roberts Western World",
+      "templateId": "3",
+      "userId": "1",
+      "id": 23
+    },
+    {
+      "artistName": "The Red Clay Stays",
+      "showDate": "September 21/8pm",
+      "venue": "The Basement",
+      "templateId": "2",
+      "userId": null,
+      "id": 24
+    },
+    {
       "artistName": "The Red Clay Strays",
-      "showDate": "July 9 / 9PM",
+      "showDate": "September 21/8pm",
+      "venue": "Basement",
+      "templateId": "1",
+      "userId": null,
+      "id": 25
+    },
+    {
+      "artistName": "The Red Clay Strays",
+      "showDate": "June 23/9pm",
+      "venue": "The Basement East",
+      "templateId": "4",
+      "userId": null,
+      "id": 26
+    },
+    {
+      "id": 27,
+      "artistName": "RED CLAY STRAYS",
+      "showDate": "JUNE 23/8PM",
+      "venue": "BASEMENT",
+      "templateId": "2",
+      "userId": "1"
+    },
+    {
+      "artistName": "Red Clay Strays",
+      "showDate": "June 23/8pm",
+      "venue": "The Basement",
+      "templateId": "2",
+      "userId": null,
+      "id": 29
+    },
+    {
+      "artistName": "The Red Clay Strays",
+      "showDate": "September 23/9pm",
+      "venue": "The Exit Inn",
+      "templateId": "1",
+      "userId": "1",
+      "id": 30
+    },
+    {
+      "artistName": "Brandon Rickman",
+      "showDate": "October 24/8pm",
+      "venue": "The Run",
+      "templateId": "3",
+      "userId": "1",
+      "id": 31
+    },
+    {
+      "artistName": "The Band",
+      "showDate": "September 23 / 9pm",
       "venue": "The Basement",
       "templateId": "2",
       "userId": "1",
-      "id": 45
+      "id": 32
     }
   ]
 }
