@@ -136,7 +136,7 @@ export default class ReactPDFPageFour extends Component {
 
         
             <Text  style={styles.pdfPageFourShowcase}>
-                SHOWCASE!
+                Live Show!
             </Text>
             
             <Text  style={styles.pdfPageFourTop}>

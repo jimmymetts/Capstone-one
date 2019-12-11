@@ -30,7 +30,7 @@ export default class PosterTemplateFour extends Component {
                     <div className="pageBackground">
 
                         <div className="TemplateFourOutterBorder" >
-                        <center><font size="24">SHOWCASE!</font></center>
+                        <center><font size="24">Live Show!</font></center>
                             <br></br>
                             <div className="TemplateFourContent">
                                 <br></br>
